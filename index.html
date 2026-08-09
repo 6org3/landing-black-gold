@@ -24,14 +24,18 @@
   --gold-600:#D4AF37;--gold-700:#9E7C1C;--gold-900:#3D3300;
   --surface-base:#09090B;--surface-sunken:#0D0D0F;--surface-card:#121214;
   --surface-raised:#18181B;--surface-top:#1F1F23;
-  --fg:#EDEDED;--fg-secondary:#9CA3AF;--fg-muted:#6B7280;--fg-faint:#4B5563;--fg-inverse:#0A0A0C;
+  --fg:#EDEDED;--fg-secondary:#9CA3AF;--fg-muted:#828997;--fg-faint:#7B8593;--fg-inverse:#0A0A0C;
   --success:#10B981;--success-soft:#34D399;--warning:#F59E0B;--warning-soft:#FBBF24;
   --caution:#F97316;--caution-soft:#FB923C;--danger:#EF4444;--danger-soft:#F87171;
   --info:#3B82F6;--info-soft:#60A5FA;--mental:#A855F7;--mental-soft:#C084FC;
+  --social:#EC4899;--social-soft:#F472B6;
+  --social-youtube:#FF0033;--social-facebook:#1877F2;
+  --social-instagram-pink:#D62976;--social-instagram-purple:#962FBF;--social-instagram-orange:#FEDA75;
+  --social-tiktok-cyan:#25F4EE;--social-tiktok-pink:#FE2C55;
   --rank-rookie:#9CA3AF;--rank-prospecto:#FB923C;--rank-desarrollo:#60A5FA;
   --rank-elite:#FFD700;--rank-leyenda:#C084FC;
   --tier-excelente:#34D399;--tier-muybueno:#FFD700;--tier-bueno:#22D3EE;
-  --tier-regular:#FB923C;--tier-sindatos:#4B5563;
+  --tier-regular:#FB923C;--tier-sindatos:#7B8593;
   --radius-control:12px;--radius-panel:16px;--radius-card:24px;
   --shadow-card:0 10px 30px -10px rgb(0 0 0/.8),inset 0 1px 0 rgb(255 255 255/.02);
   --glow-gold:0 0 20px rgb(255 215 0/.4);--glow-bar:0 0 8px rgb(255 215 0/.5);
@@ -95,6 +99,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .chip.info{border-color:rgb(59 130 246/.35);color:var(--info-soft);background:rgb(59 130 246/.08)}
 .chip.caution{border-color:rgb(249 115 22/.35);color:var(--caution-soft);background:rgb(249 115 22/.08)}
 .chip.success{border-color:rgb(16 185 129/.3);color:var(--success-soft);background:rgb(16 185 129/.08)}
+.chip.mental{border-color:rgb(168 85 247/.35);color:var(--mental-soft);background:rgb(168 85 247/.08)}
 .dot{width:7px;height:7px;border-radius:999px;flex:none;animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.4}}
 
@@ -156,8 +161,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .nav-wa{flex:none}
 .nav-spacer{flex:1;min-width:0}
 .nav-social{display:flex;align-items:center;gap:2px;flex:none}
-.nav-social a{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;color:rgba(255,255,255,.75);transition:color .15s var(--ease-premium)}
-.nav-social a:hover{color:var(--gold-500)}
+.nav-social a{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;color:var(--fg-secondary);transition:color .15s var(--ease-premium),transform .15s var(--ease-premium),filter .15s var(--ease-premium)}
+.nav-social a:hover{transform:translateY(-1px)}
 .nav-social svg{width:19px;height:19px;display:block}
 @media(max-width:700px){.nav-social{display:none!important}}
 @media(max-width:640px){.nav-wa-label{display:none}.nav-wa{padding:0 12px}}
@@ -184,6 +189,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .wordmark .g{color:var(--gold-500)}
 .hero-sub{margin:16px 0 4px;font-size:clamp(15px,1.8vw,18px);color:var(--fg);font-weight:300;max-width:38ch}
 .hero .chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}
+.hero .chip::before{content:"";width:5px;height:5px;border-radius:999px;background:currentColor;box-shadow:0 0 9px currentColor;opacity:.85;flex:none}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
 .hero-jaguar img{width:100%;max-width:360px;margin-left:auto;filter:drop-shadow(0 24px 60px rgb(0 0 0/.85))}
 @media(max-width:860px){.hero-jaguar{max-width:210px;margin:6px auto 0;opacity:.92}.hero-jaguar img{max-width:210px}}
@@ -306,9 +312,17 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .foot-maps{color:inherit;text-decoration:none;border-bottom:1px solid rgb(255 255 255/.25);display:inline-flex;align-items:center;gap:4px;transition:color .15s var(--ease-premium),border-color .15s var(--ease-premium)}
 .foot-maps:hover{color:var(--gold-500);border-color:var(--gold-600)}
 .social-row{display:flex;gap:14px;align-items:center}
-.social-row a{color:#fff;display:inline-flex;transition:color .15s var(--ease-premium)}
-.social-row a:hover{color:var(--gold-500)}
+.social-row a{color:var(--fg-secondary);display:inline-flex;transition:color .15s var(--ease-premium),transform .15s var(--ease-premium),filter .15s var(--ease-premium)}
+.social-row a:hover{transform:translateY(-1px)}
 .social-row svg{width:24px;height:24px;display:block}
+.nav-social a[href*="youtube"],.social-row a[href*="youtube"]{color:var(--social-youtube);filter:drop-shadow(0 0 5px rgb(255 0 51/.22))}
+.nav-social a[href*="facebook"],.social-row a[href*="facebook"]{color:var(--social-facebook);filter:drop-shadow(0 0 5px rgb(24 119 242/.2))}
+.nav-social a[href*="instagram"],.social-row a[href*="instagram"]{color:var(--social);filter:drop-shadow(0 0 5px rgb(214 41 118/.2))}
+.nav-social a[href*="instagram"] path,.social-row a[href*="instagram"] path{fill:url(#instagram-gradient)}
+.nav-social a[href*="tiktok"],.social-row a[href*="tiktok"]{color:var(--fg);filter:drop-shadow(-1px 0 0 var(--social-tiktok-cyan)) drop-shadow(1px 0 0 var(--social-tiktok-pink))}
+.nav-social a:hover,.social-row a:hover{filter:drop-shadow(0 0 8px currentColor)}
+.nav-social a[href*="tiktok"]:hover,.social-row a[href*="tiktok"]:hover{filter:drop-shadow(-2px 0 3px var(--social-tiktok-cyan)) drop-shadow(2px 0 3px var(--social-tiktok-pink))}
+.svg-defs{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
 .fab{
   position:fixed;right:16px;bottom:16px;z-index:190;width:52px;height:52px;border-radius:50%;
   background:var(--success);color:var(--fg-inverse);display:grid;place-items:center;text-decoration:none;
@@ -468,6 +482,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 </style>
 </head>
 <body>
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--social-instagram-orange)"/>
+      <stop offset=".5" stop-color="var(--social-instagram-pink)"/>
+      <stop offset="1" stop-color="var(--social-instagram-purple)"/>
+    </linearGradient>
+  </defs>
+</svg>
 
 <nav id="nav" aria-label="Secciones"><div class="navin">
   <a href="#inicio" class="brandmark"><span class="brand-ico" aria-hidden="true"></span>BLACK<span class="g">GOLD</span></a>
@@ -537,9 +560,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <h1 class="wordmark hero-anim d1"><span>BLACK</span><span class="g">GOLD</span></h1>
         <p class="hero-sub hero-anim d2">Club formativo de baloncesto y entrenamiento personalizado, para todas las edades. Aquí no se improvisa: se mide, se planifica y se crece.</p>
         <div class="chips hero-anim d3">
-          <span class="chip">Seriedad</span>
-          <span class="chip">Biomecánica</span>
-          <span class="chip">Desarrollo</span>
+          <span class="chip gold">Rigor científico</span>
+          <span class="chip info">Biomecánica</span>
+          <span class="chip success">Desarrollo</span>
+          <span class="chip mental">Mentalidad</span>
         </div>
         <div class="hero-cta hero-anim d4">
           <a class="btn btn-primary" data-wa="Quiero más información del club. #InfoGeneral">Quiero información del club</a>
