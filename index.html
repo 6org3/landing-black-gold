@@ -273,6 +273,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .matricula .amt{font-family:var(--f-body);font-weight:900;font-size:40px;color:var(--gold-500);letter-spacing:-.02em}
 .matricula p{color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
 
+/* ---------- oferta de apertura ---------- */
+.launch-offer{position:relative;overflow:hidden;padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.28)}
+.launch-offer:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold-700),var(--gold-400),var(--gold-700))}
+.launch-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:30px;border:1px solid var(--line)}
+.launch-step{min-width:0;padding:22px;border-right:1px solid var(--line)}
+.launch-step:last-child{border-right:0}
+.launch-date{display:block;min-height:38px;color:var(--gold-400);font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.launch-price{display:block;margin:14px 0 12px;color:var(--fg);font-family:var(--f-display);font-size:clamp(34px,5vw,58px);font-weight:850;line-height:1}
+.launch-step p,.launch-note{color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
+.launch-note{margin-top:20px;padding-left:16px;border-left:3px solid var(--success)}
+.launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+@media(max-width:800px){.launch-grid{grid-template-columns:repeat(2,1fr)}.launch-step:nth-child(2){border-right:0}.launch-step:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.launch-grid{grid-template-columns:1fr}.launch-step,.launch-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.launch-step:last-child{border-bottom:0}.launch-actions .btn{width:100%;justify-content:center}}
+
 /* ---------- horarios ---------- */
 .sched{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:34px}
 @media(max-width:900px){.sched{grid-template-columns:1fr}}
@@ -596,11 +610,32 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     </div>
   </section>
 
+  <section class="sec" id="oferta-apertura">
+    <div class="wrap">
+      <div class="launch-offer glass rv">
+        <div class="eyebrow gold">Oferta de apertura · solo 7 días</div>
+        <h2 style="margin-top:10px">Empieza con <span class="grad-gold">$40</span></h2>
+        <p class="lead" style="margin-top:14px;max-width:62ch">Para grupos juveniles y Clase Ejecutiva. El registro y el pago deben quedar confirmados del <b style="color:var(--fg)">25 al 31 de agosto de 2026</b>.</p>
+        <div class="launch-grid" aria-label="Cronograma de la oferta de apertura">
+          <div class="launch-step"><span class="launch-date">25–31 ago 2026</span><strong class="launch-price">$40</strong><p>Inscripción, septiembre y un uniforme de entrenamiento del color elegido.</p></div>
+          <div class="launch-step"><span class="launch-date">Septiembre 2026</span><strong class="launch-price">$0</strong><p>No hay mensualidad adicional: el primer mes ya está incluido.</p></div>
+          <div class="launch-step"><span class="launch-date">Oct 2026–ago 2027</span><strong class="launch-price">$20</strong><p>Mensualidad protegida durante once meses.</p></div>
+          <div class="launch-step"><span class="launch-date">Desde septiembre 2027</span><strong class="launch-price">$25</strong><p>Nivelación a la tarifa regular.</p></div>
+        </div>
+        <p class="launch-note"><b style="color:var(--fg)">Uniforme:</b> se entrega al terminar septiembre. La camiseta y las demás prendas de presentación se adquieren aparte. El descuento familiar de 20% se aplica al total de las mensualidades, no a las inscripciones.</p>
+        <div class="launch-actions">
+          <a class="btn btn-wa" data-wa="Quiero la oferta de apertura del 25 al 31 de agosto: $40 con septiembre y uniforme de entrenamiento incluidos. #OfertaApertura">Consultar la oferta</a>
+          <a class="btn btn-ghost" href="https://app.blackgoldec.com/registro">Ir al registro en la app</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <section class="sec" id="uniforme-sec">
     <div class="wrap">
       <div class="eyebrow rv">El uniforme</div>
       <h2 class="rv d1">Se viste<br><span class="grad-gold">de club</span></h2>
-      <p class="lead rv d2" style="margin-top:14px">El primer día ya es Black Gold: camiseta y short con el escudo del club. El oro se lleva puesto.</p>
+      <p class="lead rv d2" style="margin-top:14px">El uniforme de entrenamiento lleva el escudo del club y se elige al inscribirse. En la oferta de apertura se entrega al terminar septiembre; las prendas de presentación se adquieren aparte.</p>
       <div class="gallery">
         <div class="frame glass uniforme rv d1">
           <picture><source srcset="assets/uniforme.webp" type="image/webp"><img class="foto-real" src="assets/uniforme.jpg" alt="Mockup oficial del uniforme de Black Gold" loading="lazy" decoding="async"></picture>
@@ -744,7 +779,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="amt">$40</div>
         </div>
         <div>
-          <p><b style="color:var(--fg);font-weight:600">Incluye el uniforme completo</b> —camiseta y short con el escudo del club—. Se paga una sola vez al inscribirse: tu hijo entrena con la ropa del club desde el día uno. Sin sorpresas.</p>
+          <p><b style="color:var(--fg);font-weight:600">Incluye un uniforme de entrenamiento</b> del color elegido, con camiseta y short del club. La fecha de entrega se confirma al inscribirse. La camiseta y demás prendas de presentación se adquieren aparte.</p>
           <div style="margin-top:14px"><a class="btn btn-wa btn-sm" data-wa="Tengo una pregunta sobre la matrícula y el uniforme. #Matricula">Preguntar por la matrícula</a></div>
         </div>
       </div>
@@ -989,8 +1024,9 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="hora">19:30–21:00</div>
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
-          <p style="margin:0 0 16px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Cupos limitados.</p>
-          <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna. #InfoGeneral">Consultar la Clase Ejecutiva</a>
+          <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Cupos limitados.</p>
+          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Del 25 al 31 de agosto aplica la oferta de $40 con septiembre y uniforme de entrenamiento incluidos.</p>
+          <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y la oferta de apertura. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
         </div>
       </div>
 
