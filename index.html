@@ -11,7 +11,7 @@
 <meta property="og:locale" content="es_EC">
 <meta name="twitter:card" content="summary">
 <title>Black Gold — Club formativo de baloncesto · Nueva Loja</title>
-<meta name="description" content="Club formativo de baloncesto y entrenamiento deportivo personalizado en Nueva Loja, Sucumbíos. Planes de Desarrollo, Reacondicionamiento, evaluación, horarios, instalaciones y la app del club.">
+<meta name="description" content="Club formativo de baloncesto y entrenamiento deportivo personalizado en Nueva Loja, Sucumbíos. Conoce nuestros planes de desarrollo y reacondicionamiento, los horarios, las instalaciones y la app del club.">
 <style>
 @font-face{font-family:'Big Shoulders Display';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/brand-1.woff2) format('woff2')}
 @font-face{font-family:'Big Shoulders Display';font-style:normal;font-weight:900;font-display:swap;src:url(assets/fonts/brand-2.woff2) format('woff2')}
@@ -374,6 +374,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .menu-cue{font-family:var(--f-body);font-weight:700;font-size:11px;letter-spacing:.24em;color:#D4AF37;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;flex:none}
 .cue-arrow{flex:none;display:block;animation:cueArrowNudge .9s ease-in-out 1.2s 2}
 @media(max-width:430px){.menu-cue{font-size:0}.menu-cue::before{content:"MENÚ";font-size:11px}}
+@media(max-width:480px){.navin{gap:8px;padding:10px 12px}.menu-btn{width:44px;height:44px}.cue-arrow{display:none}.menu-cue{letter-spacing:.1em}}
 
 #nav:has(#menu-btn.open){z-index:210}
 .menu-ov{position:fixed;inset:0;z-index:200;opacity:0;transition:opacity .16s cubic-bezier(.23,1,.32,1)}
@@ -383,10 +384,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .menu-in::before,.menu-in::after{content:"";flex:1 0 10px}
 .menu-escudo{width:clamp(96px,14vh,150px);height:auto}
 
-.menu-list{display:flex;flex-direction:column;align-items:center;gap:6px}
+.menu-list{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;min-width:0}
 .m-link{
-  display:block;font-family:var(--f-display);font-weight:900;
-  font-size:clamp(32px,6.2vh,54px);line-height:1.06;letter-spacing:.03em;color:#fff;
+  display:block;max-width:100%;min-width:0;font-family:var(--f-display);font-weight:900;
+  font-size:clamp(26px,7vw,48px);line-height:1.12;letter-spacing:.02em;color:#fff;overflow-wrap:anywhere;
   text-transform:uppercase;text-decoration:none;text-align:center;
   opacity:0;transform:translateY(14px);
   transition:opacity .32s cubic-bezier(.23,1,.32,1),transform .32s cubic-bezier(.23,1,.32,1),color .16s cubic-bezier(.23,1,.32,1);
@@ -403,8 +404,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .m-link:hover{color:var(--gold-500);transform:translateX(4px)}
 .m-link.active{color:var(--gold-500)}
 .m-num{font-size:12px;letter-spacing:.3em;color:rgb(212 175 55/.7);display:block;font-family:var(--f-body);font-weight:600}
-.m-sub{display:block;font-family:var(--f-body);font-weight:300;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgb(255 255 255/.45);margin-top:2px}
-.m-link-long{font-size:clamp(22px,5.6vw,40px)}
+.m-sub{display:block;font-family:var(--f-body);font-weight:400;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-secondary);margin-top:4px}
+.m-link-long{font-size:clamp(20px,5.6vw,40px);letter-spacing:0}
 
 .menu-foot{
   display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:10px;
@@ -551,7 +552,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <a href="#app" class="m-link" data-view-link="app"><span class="m-num">04</span>La App<span class="m-sub">Todo el club, en el bolsillo</span></a>
       <a href="#horarios" class="m-link" data-view-link="horarios"><span class="m-num">05</span>Horarios<span class="m-sub">07:00 – 21:00 · lunes a viernes</span></a>
       <a href="#planes" class="m-link" data-view-link="planes"><span class="m-num">06</span>Desarrollo<span class="m-sub">Planes para niños y jóvenes</span></a>
-      <a href="#plata" class="m-link" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Planes para personas adultas · mañanas</span></a>
+      <a href="#plata" class="m-link m-link-long" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Personas adultas · mañanas</span></a>
       <a href="#instalaciones" class="m-link" data-view-link="instalaciones"><span class="m-num">08</span>Instalaciones<span class="m-sub">Cancha privada y del parque · fase inicial</span></a>
     </nav>
     <div class="menu-foot">
@@ -580,7 +581,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div>
         <div class="eyebrow gold hero-anim d1">Nueva Loja · Sucumbíos</div>
         <h1 class="wordmark hero-anim d1"><span>BLACK</span><span class="g">GOLD</span></h1>
-        <p class="hero-sub hero-anim d2">Club formativo de baloncesto y entrenamiento personalizado, para todas las edades. Aquí no se improvisa: se mide, se planifica y se crece.</p>
+        <p class="hero-sub hero-anim d2">Club formativo de baloncesto y entrenamiento personalizado para todas las edades. Evaluamos tu punto de partida, planificamos tu entrenamiento y seguimos tu progreso.</p>
         <div class="chips hero-anim d3">
           <span class="chip gold">Rigor científico</span>
           <span class="chip info">Biomecánica</span>
@@ -604,8 +605,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <p class="lead rv d2" style="margin-top:14px">Nueva Loja existe por el oro negro: tierra en bruto que se vuelve valor. Lo mismo hace un club formativo con un atleta: el jaguar no es adorno, es potencia, control y mirada.</p>
       <div class="philo-values rv d3">
         <div><b>Rigor científico</b><span>Se evalúa con datos, se planifica por atleta y se vuelve a medir para comprobar el progreso.</span></div>
-        <div><b>Biomecánica</b><span>El dato manda. Se mide al entrar y se vuelve a medir cada trimestre.</span></div>
-        <div><b>Desarrollo</b><span>Todas las edades: del semillero al alto rendimiento, y también quien vuelve a moverse.</span></div>
+        <div><b>Biomecánica</b><span>Analizamos cómo te mueves para orientar el trabajo técnico.</span></div>
+        <div><b>Desarrollo</b><span>Para todas las edades: desde el semillero hasta el alto rendimiento, incluido el regreso a la actividad física.</span></div>
       </div>
     </div>
   </section>
@@ -613,18 +614,19 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
   <section class="sec" id="oferta-apertura">
     <div class="wrap">
       <div class="launch-offer glass rv">
-        <div class="eyebrow gold">Oferta de apertura · solo 7 días</div>
-        <h2 style="margin-top:10px">Entra esta semana y ahorra <span class="grad-gold">$80</span> en tu primer año</h2>
-        <p class="lead" style="margin-top:14px;max-width:62ch">Empieza con $40 y conserva la mensualidad protegida durante once meses. Para grupos juveniles y Clase Ejecutiva; el registro y el pago deben quedar confirmados del <b style="color:var(--fg)">25 al 31 de agosto de 2026</b>.</p>
-        <div class="launch-grid" aria-label="Cronograma de la oferta de apertura">
-          <div class="launch-step"><span class="launch-date">25–31 ago 2026</span><strong class="launch-price">$40</strong><p>Inscripción, septiembre y un uniforme de entrenamiento del color elegido.</p></div>
-          <div class="launch-step"><span class="launch-date">Septiembre 2026</span><strong class="launch-price">$0</strong><p>No hay mensualidad adicional: el primer mes ya está incluido.</p></div>
-          <div class="launch-step"><span class="launch-date">Oct 2026–ago 2027</span><strong class="launch-price">$20</strong><p>Mensualidad protegida durante once meses.</p></div>
-          <div class="launch-step"><span class="launch-date">Desde septiembre 2027</span><strong class="launch-price">$25</strong><p>Nivelación a la tarifa regular.</p></div>
+        <div class="eyebrow gold">Oferta de apertura · todo septiembre de 2026</div>
+        <h2 style="margin-top:10px">Matricúlate por <span class="grad-gold">$40</span></h2>
+        <p class="lead" style="margin-top:14px;max-width:62ch">Para grupos juveniles y Clase Ejecutiva. Confirma tu matrícula y pago del <b style="color:var(--fg)">1 al 30 de septiembre de 2026</b> y accede al período gratuito y a la tarifa protegida.</p>
+        <div class="launch-grid" aria-label="Fechas y condiciones de la oferta de septiembre">
+          <div class="launch-step"><span class="launch-date">1–30 sep 2026</span><strong class="launch-price">$40</strong><p>Matrícula con un uniforme de entrenamiento del color elegido.</p></div>
+          <div class="launch-step"><span class="launch-date">15 sep–15 oct 2026</span><strong class="launch-price">$0</strong><p>Período gratuito con fechas fijas: del 15 de septiembre al 15 de octubre.</p></div>
+          <div class="launch-step"><span class="launch-date">Desde el 15 oct 2026</span><strong class="launch-price">$20</strong><p>Mensualidad protegida hasta agosto de 2027. El corte es el día 15 de cada mes.</p></div>
+          <div class="launch-step"><span class="launch-date">Desde septiembre de 2027</span><strong class="launch-price">$25</strong><p>Mensualidad regular.</p></div>
         </div>
-        <p class="launch-note"><b style="color:var(--fg)">Uniforme de entrenamiento:</b> se entrega al terminar septiembre. El uniforme de presentación y las demás prendas de presentación se adquieren aparte. El descuento familiar de 20% se aplica al total de las mensualidades, no a las inscripciones.</p>
+        <p class="launch-note"><b style="color:var(--fg)">El mes gratis tiene un corte fijo:</b> termina el <b style="color:var(--fg)">15 de octubre de 2026</b>, independientemente del día de matrícula. Por ejemplo, si te matriculas el 30 de septiembre, entrenas sin mensualidad hasta el 15 de octubre; ese día comienza tu primer período de pago. No se cuentan 30 días desde tu matrícula.</p>
+        <p class="launch-note"><b style="color:var(--fg)">Uniforme:</b> confirma talla, disponibilidad y fecha de entrega al matricularte. Las prendas de presentación son extras. El descuento familiar del 20% se aplica al total de las mensualidades, no a las matrículas.</p>
         <div class="launch-actions">
-          <a class="btn btn-wa" data-wa="Quiero la oferta de apertura del 25 al 31 de agosto: $40 con septiembre y uniforme de entrenamiento incluidos. #OfertaApertura">Consultar la oferta</a>
+          <a class="btn btn-wa" data-wa="Me interesa la oferta de septiembre: matrícula de $40 con uniforme de entrenamiento y período gratuito del 15 de septiembre al 15 de octubre de 2026, con corte fijo aunque me matricule después del 15 de septiembre. #OfertaApertura">Consultar la oferta</a>
           <a class="btn btn-ghost" href="https://app.blackgoldec.com/registro">Ir al registro en la app</a>
         </div>
       </div>
@@ -635,11 +637,11 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow rv">El uniforme</div>
       <h2 class="rv d1">Se viste<br><span class="grad-gold">de club</span></h2>
-      <p class="lead rv d2" style="margin-top:14px">El uniforme de entrenamiento lleva el escudo del club y se elige al inscribirse. En la oferta de apertura se entrega al terminar septiembre; las prendas de presentación se adquieren aparte.</p>
+      <p class="lead rv d2" style="margin-top:14px">La oferta de septiembre incluye un uniforme de entrenamiento con el escudo del club. Elige el color y confirma talla, disponibilidad y fecha de entrega al inscribirte. Las prendas de presentación son extras.</p>
       <div class="gallery">
         <div class="frame glass uniforme rv d1">
-          <picture><source srcset="assets/uniforme.webp" type="image/webp"><img class="foto-real" src="assets/uniforme.jpg" alt="Mockup oficial del uniforme de Black Gold" loading="lazy" decoding="async"></picture>
-          <div class="lab">Mockup oficial · el uniforme del club</div>
+          <picture><source srcset="assets/uniforme.webp" type="image/webp"><img class="foto-real" src="assets/uniforme.jpg" alt="Presentación de los uniformes negros y dorados de Black Gold" loading="lazy" decoding="async"></picture>
+          <div class="lab">El uniforme del club · negro y dorado</div>
         </div>
       </div>
     </div>
@@ -657,7 +659,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="eyebrow gold">01</div>
           <h3>Desarrollo</h3>
           <p>Grupos por nivel, no por edad. Tres escalones de cancha compartida.</p>
-          <div class="hook">$25–$75 · más días, grupo más chico</div>
+          <div class="hook">$25–$75 · más sesiones y grupos más pequeños</div>
           <span class="go">Entrar →</span>
         </a>
         <a class="bcard glass rv d2" href="#plata">
@@ -701,15 +703,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 
   <section class="sec-tight rv" style="text-align:center">
     <div class="wrap">
-      <h2 class="rv">Pruebas gratuitas<br><span class="grad-gold">desde septiembre</span></h2>
-      <p class="lead rv d1" style="margin:14px auto 24px;max-width:48ch">Desde el 1 de septiembre tu hijo podrá entrenar una vez sin costo. La sesión se coordina previamente y depende del cupo del horario.</p>
-      <a class="btn btn-wa rv d2" data-wa="Quiero consultar una sesión de prueba gratuita desde septiembre. #Prueba">Consultar una sesión de prueba</a>
+      <h2 class="rv">Una sesión de prueba<br><span class="grad-gold">sin costo</span></h2>
+      <p class="lead rv d1" style="margin:14px auto 24px;max-width:48ch">Tu hijo puede conocer el club con una sesión de entrenamiento gratuita, previa coordinación y sujeta a disponibilidad en el horario elegido.</p>
+      <a class="btn btn-wa rv d2" data-wa="Quiero coordinar una sesión de prueba gratuita para mi hijo. #Prueba">Consultar una sesión de prueba</a>
       <div class="matricula glass rv d3" style="max-width:780px;margin:28px auto 0;text-align:left">
         <div>
           <div class="tag-label">Beneficio familiar</div>
           <div class="amt">20%</div>
         </div>
-        <p>Si dos o más familiares están activos en Black Gold, reciben 20% de descuento sobre la suma de sus mensualidades, aunque entrenen en horarios distintos. No aplica a matrículas y se valida con el equipo.</p>
+        <p>Si dos o más familiares están activos en Black Gold, reciben un 20% de descuento sobre la suma de sus mensualidades, aunque entrenen en horarios distintos. No se aplica a las matrículas y debe validarse con el equipo.</p>
       </div>
     </div>
   </section>
@@ -724,8 +726,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow gold rv">01 · Desarrollo</div>
       <h1 class="rv d1">Planes de<br><span class="grad-gold">Desarrollo</span></h1>
-      <p class="lead rv d2" style="margin-top:14px">Todos los atletas entran al programa formativo y todos reciben la evaluación
-        antropométrica de entrada. Lo que cambia entre planes es cuántos comparten la cancha con tu hijo.</p>
+      <p class="lead rv d2" style="margin-top:14px">Todos los atletas ingresan al programa formativo con una evaluación antropométrica inicial. Los planes se diferencian por el tamaño del grupo, las sesiones y el seguimiento.</p>
 
       <div class="plans">
         <div class="plan glass rv d1">
@@ -744,13 +745,13 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <div class="plan glass hot rv d2">
           <div class="flag">Más elegido</div>
           <div class="pname">Especializado</div>
-          <div class="psize">Grupo de trabajo · máximo 20</div>
+          <div class="psize">Grupo de trabajo · máximo 20 atletas</div>
           <div class="price"><span class="amt">$45</span><span class="per">/ mes</span></div>
           <ul>
             <li>Todo lo del plan Formativo</li>
-            <li>Sesiones extra en grupo de máximo 20</li>
+            <li>Sesiones extra en grupos de hasta 20 atletas</li>
             <li>5 días de clase por semana</li>
-            <li>Agrupado por nivel al detalle, no por edad</li>
+            <li>Grupos organizados según el nivel de cada atleta</li>
             <li>Trabajo diseñado con sus datos antropométricos</li>
             <li>Plan escrito y reunión con el entrenador</li>
           </ul>
@@ -779,13 +780,12 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="amt">$40</div>
         </div>
         <div>
-          <p><b style="color:var(--fg);font-weight:600">Incluye un uniforme de entrenamiento</b> del color elegido, con camiseta deportiva y short del club. La fecha de entrega se confirma al inscribirse. El uniforme de presentación y las demás prendas de presentación se adquieren aparte.</p>
+          <p><b style="color:var(--fg);font-weight:600">Incluye un uniforme de entrenamiento</b> del color elegido, con camiseta deportiva y short del club. La fecha de entrega se confirma al inscribirse. Las prendas de presentación son extras.</p>
           <div style="margin-top:14px"><a class="btn btn-wa btn-sm" data-wa="Tengo una pregunta sobre la matrícula y el uniforme. #Matricula">Preguntar por la matrícula</a></div>
         </div>
       </div>
 
-      <p class="plan-note rv">¿Buscas uno a uno exclusivo todas las semanas? Es un formato aparte y con cupo muy
-        limitado — <a href="#" data-wa="Me interesa el entrenamiento uno a uno exclusivo. #UnoAUno" style="color:var(--gold-500);text-decoration:none;border-bottom:1px solid var(--gold-700)">escríbenos</a>.</p>
+      <p class="plan-note rv">¿Buscas entrenamiento individual cada semana? Consulta este servicio por separado; tiene cupos limitados. <a href="#" data-wa="Me interesa el entrenamiento uno a uno exclusivo. #UnoAUno" style="color:var(--gold-500);text-decoration:none;border-bottom:1px solid var(--gold-700)">escríbenos</a>.</p>
     </div>
   </section>
 </section>
@@ -802,10 +802,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <picture><source srcset="assets/reacondicionamiento.webp" type="image/webp"><img src="assets/reacondicionamiento.jpg" alt="Grupo de personas adultas del programa de la mañana, en el gimnasio techado" loading="lazy" decoding="async"></picture>
         <div class="lab">El grupo de la mañana · esto ya está pasando</div>
       </div>
-      <p class="lead rv d2" style="margin-top:14px">En las mañanas la cancha cambia de público: personas adultas de cualquier edad, en movilidad, fuerza, cardio y biomecánica. No es baloncesto: es recuperar capacidades y confiar de nuevo en tu cuerpo.</p>
-      <p class="lead rv d3" style="margin-top:12px">Los grupos se arman por <b style="color:var(--fg);font-weight:600">nivel de
-        movilidad</b>, medido en una valoración de entrada. No por edad y no por sexo — porque a los 40 y a los
-        70 hay gente que empieza en el mismo punto.</p>
+      <p class="lead rv d2" style="margin-top:14px">Por las mañanas, la cancha recibe a personas adultas de todas las edades para trabajar movilidad, fuerza, cardio y biomecánica. El objetivo es recuperar capacidades y ganar confianza al moverse.</p>
+      <p class="lead rv d3" style="margin-top:12px">Una valoración inicial permite organizar los grupos por <b style="color:var(--fg);font-weight:600">nivel de movilidad</b>. Personas de distintas edades pueden comenzar en el mismo nivel.</p>
 
       <div class="philo-values rv d4" style="margin-top:30px">
         <div><b>Movilidad</b><span>Rango articular y control postural</span></div>
@@ -835,8 +833,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="psize">Cupos limitados</div>
           <div class="price"><span class="amt">$40</span><span class="per">/ mes</span></div>
           <ul>
-            <li>Tres sesiones por semana en grupo chico</li>
-            <li>Progresión de carga medida, no a ojo</li>
+            <li>Tres sesiones por semana en un grupo pequeño</li>
+            <li>Aumento de carga basado en mediciones</li>
             <li>Reevaluación cada trimestre con informe</li>
             <li>Corrección técnica individual en cada sesión</li>
           </ul>
@@ -847,9 +845,9 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="psize">Cupos limitados</div>
           <div class="price"><span class="amt">$70</span><span class="per">/ mes</span></div>
           <ul>
-            <li>Para quien vuelve después de una lesión o cirugía</li>
-            <li>O tiene condiciones que piden supervisión cercana</li>
-            <li>Trabajo diseñado persona por persona</li>
+            <li>Para quienes retoman la actividad después de una lesión o cirugía</li>
+            <li>También para personas que requieren supervisión cercana</li>
+            <li>Trabajo adaptado a cada persona</li>
             <li>Requiere certificado médico y valoración previa</li>
           </ul>
           <a class="btn btn-wa btn-block" data-wa="Me interesa la Franja Plata, plan ACOMPAÑADO ($70/mes). #PlataAcompanado">Consultar cupo</a>
@@ -862,8 +860,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="amt">$20</div>
         </div>
         <div>
-          <p><b style="color:var(--fg);font-weight:600">Incluye la camiseta técnica del club.</b> Se paga una vez al inscribirse,
-          junto con la valoración inicial de movilidad.</p>
+          <p><b style="color:var(--fg);font-weight:600">Incluye la camiseta técnica del club.</b> La matrícula se paga una sola vez. Al ingresar se realiza una valoración inicial de movilidad.</p>
         </div>
       </div>
     </div>
@@ -878,7 +875,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow gold rv">03 · Método</div>
       <h1 class="rv d1">Se mide.<br>Después se <span class="grad-gold">asigna</span>.</h1>
-      <p class="lead rv d2" style="margin-top:14px">La mayoría agrupa por edad; nosotros, por lo que el atleta puede hacer hoy, medido con parámetros, no a ojo. La evaluación antropométrica es el primer paso, sin excepción.</p>
+      <p class="lead rv d2" style="margin-top:14px">Asignamos el grupo según las capacidades actuales del atleta, evaluadas con criterios definidos. La evaluación antropométrica es el primer paso, sin excepción.</p>
 
       <div class="grid3">
         <div class="lvl-card glass rv d1">
@@ -895,14 +892,14 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         </div>
         <div class="lvl-card glass rv d3">
           <span class="chip gold">⭐ Élite</span>
-          <p><b style="color:var(--fg)">Competencia.</b> Sistemas, roles en cancha, carga y preparación para competir. Aquí se rinde cuentas.</p>
+          <p><b style="color:var(--fg)">Competencia.</b> Sistemas, roles en cancha, carga y preparación para competir. Aquí se rinden cuentas.</p>
           <div class="bar-lab"><span class="eyebrow">Nivel de exigencia</span></div>
           <div class="track"><div class="fill gold" data-w="100"></div></div>
         </div>
       </div>
 
       <p class="lead rv" style="margin-top:34px">El nivel no lo decide la edad: lo decide el desarrollo real de cada atleta.
-        Cada trimestre se repite la evaluación y el resultado se lee con un baremo claro:</p>
+        Cada trimestre se repite la evaluación y los resultados se interpretan con una escala definida:</p>
       <div class="baremo-row rv d1">
         <span class="chip" style="background:transparent;border-color:rgb(52 211 153/.3);color:var(--tier-excelente)">Excelente ≥81</span>
         <span class="chip" style="background:transparent;border-color:rgb(255 215 0/.3);color:var(--tier-muybueno)">Muy bueno ≥61</span>
@@ -910,7 +907,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <span class="chip" style="background:transparent;border-color:rgb(251 146 60/.3);color:var(--tier-regular)">Regular ≥21</span>
         <span class="chip" style="background:transparent;border-color:rgb(75 85 99/.5);color:var(--fg-secondary)">Sin datos</span>
       </div>
-      <p class="lead rv d2" style="margin-top:22px">Todo esto la familia lo ve, actualizado, desde la app —
+      <p class="lead rv d2" style="margin-top:22px">La familia puede consultar los resultados actualizados en la app.
         <a href="#app" style="color:var(--gold-500);text-decoration:none;border-bottom:1px solid var(--gold-700)">ver la app →</a></p>
     </div>
   </section>
@@ -932,7 +929,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="mp-head">
             <div class="avatar">F</div>
             <div>
-              <div class="mp-title">Vista de la familia</div>
+              <div class="mp-title">Vista de la familia · ejemplo</div>
               <div class="mp-name">Asistencia, pagos y progreso</div>
             </div>
           </div>
@@ -943,14 +940,14 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="track sm"><div class="fill regular" data-w="34"></div></div>
           <div class="mp-row"><span>Nivel actual</span><span class="chip gold">⭐ Élite</span></div>
           <div class="mp-row"><span>Estado de pagos</span><span class="chip success"><i class="dot" style="background:var(--success)"></i> Al día</span></div>
-          <div class="mp-row"><span>Aviso</span><b style="font-weight:600;text-align:right">Reevaluación el 15 de agosto</b></div>
+          <div class="mp-row"><span>Aviso</span><b style="font-weight:600;text-align:right">Próxima reevaluación</b></div>
         </div>
 
         <div class="miniphone glass rv d2">
           <div class="mp-head">
             <div class="avatar">A</div>
             <div>
-              <div class="mp-title">Vista del atleta</div>
+              <div class="mp-title">Vista del atleta · ejemplo</div>
               <div class="mp-name">Misiones, XP y racha</div>
             </div>
           </div>
@@ -1025,7 +1022,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
           <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Cupos limitados.</p>
-          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Del 25 al 31 de agosto aplica la oferta de $40 con septiembre y uniforme de entrenamiento incluidos.</p>
+          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Durante todo septiembre puedes acceder a la oferta de matrícula de $40 con uniforme de entrenamiento. El período gratuito es fijo: del 15 de septiembre al 15 de octubre de 2026, aunque te matricules el 30 de septiembre. Desde el 15 de octubre, la mensualidad es de $20 hasta agosto de 2027.</p>
           <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y la oferta de apertura. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
         </div>
       </div>
@@ -1045,11 +1042,11 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow gold rv">06 · Quiénes somos</div>
       <h1 class="rv d1">Un equipo de entrenadores,<br>un <span class="grad-gold">sistema</span>.<span class="hero-subtag" style="display:block;font-size:.36em;letter-spacing:.03em;color:var(--fg-secondary);margin-top:10px">Muchas familias, un solo grupo.</span></h1>
-      <p class="lead rv d2" style="margin-top:14px">La mayoría de las escuelas son un buen entrenador y una libreta. Nosotros somos un equipo: más de cuatro décadas de experiencia formativa en la cancha, gestión con datos y una app que muestra a la familia cómo va su hijo.</p>
+      <p class="lead rv d2" style="margin-top:14px">Nuestro equipo reúne más de cuatro décadas de experiencia formativa en la cancha, gestión con datos y una app para que las familias sigan el progreso de sus hijos.</p>
 
       <div class="grid2 team-grid">
         <div class="team-card glass rv d1">
-          <div class="team-photo top"><picture><source srcset="assets/uniforme.webp" type="image/webp"><img src="assets/uniforme.jpg" alt="El director técnico y el director de gestión de Black Gold en una premiación, con trofeos" loading="lazy" decoding="async"></picture></div>
+          <div class="team-photo top"><picture><source srcset="assets/uniforme.webp" type="image/webp"><img src="assets/uniforme.jpg" alt="Integrantes de Black Gold con uniformes negros y dorados y un balón de baloncesto" loading="lazy" decoding="async"></picture></div>
           <div class="team-body">
             <div class="team-role">DIRECTOR DEPORTIVO — EL FORMADOR</div>
             <div class="team-name">Jorge Mena Barrios</div>
@@ -1061,7 +1058,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="team-body">
             <div class="team-role">CEO DE LA ORGANIZACIÓN — EL ESTRATEGA</div>
             <div class="team-name">Jorge Luis Mena Baquero</div>
-            <p>Representó a la provincia y luego compitió a nivel universitario en Quito. Graduado en Lic. en Administración de Empresas, con un diplomado en fuerza reactiva y pliometría, y actualmente cursando la carrera de Entrenamiento Deportivo. Lidera el club como CEO: gestión moderna, datos y tecnología al servicio de la formación.</p>
+            <p>Representó a la provincia y luego compitió a nivel universitario en Quito. Licenciado en Administración de Empresas, con un diplomado en fuerza reactiva y pliometría. Actualmente cursa la carrera de Entrenamiento Deportivo. Lidera el club como CEO: gestión moderna, datos y tecnología al servicio de la formación.</p>
           </div>
         </div>
 
@@ -1070,7 +1067,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="team-body">
             <div class="team-role">COMUNICACIÓN Y MARKETING — LA VOZ</div>
             <div class="team-name">Carlos Darío Mena Baquero</div>
-            <p>Seleccionado de Sucumbíos y Orellana y preseleccionado del Ecuador Sub-15. Periodista de profesión: el encargado de la estrategia de comunicación y marketing — la voz que cuenta la historia del club.</p>
+            <p>Integró las selecciones de Sucumbíos y Orellana y la preselección de Ecuador Sub-15. Es periodista y dirige la estrategia de comunicación y marketing del club.</p>
           </div>
         </div>
       </div>
@@ -1082,19 +1079,19 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="grid2">
         <div class="card glass rv d1">
           <h2 class="subhead">La cancha</h2>
-          <p>Décadas de experiencia formativa en el medio del baloncesto. El criterio que no se aprende en un curso:
+          <p>Décadas de experiencia en la formación de jugadores de baloncesto. El criterio que no se aprende en un curso:
             saber qué necesita cada chico y cuándo exigirle.</p>
         </div>
         <div class="card glass rv d2">
           <h2 class="subhead">La gestión</h2>
-          <p>Como CEO, Jorge Mena Baquero lidera la administración del club: pagos claros, asistencia y evaluaciones documentadas. Nadie te va a decir "no me acuerdo si pagaste".</p>
+          <p>Jorge Luis Mena Baquero dirige la administración del club, con registros de pagos, asistencia y evaluaciones que las familias pueden consultar.</p>
         </div>
       </div>
 
       <div class="sec-tight rv" style="padding-left:0;padding-right:0">
         <div class="eyebrow">El escudo</div>
         <h2 class="subhead rv d1" style="margin-top:10px">El jaguar no es adorno</h2>
-        <p class="lead rv d2" style="margin-top:10px">El jaguar no es adorno: es potencia, control y mirada. Igual que el oro negro dio nombre a la ciudad, el club toma talento en bruto y lo convierte en valor. <b style="color:var(--fg);font-weight:600">El oro nunca decora, siempre premia.</b></p>
+        <p class="lead rv d2" style="margin-top:10px">El jaguar representa potencia, control y atención. El escudo reúne la identidad amazónica del club y su compromiso con la formación. <b style="color:var(--fg);font-weight:600">El oro nunca decora, siempre premia.</b></p>
       </div>
 
       <div class="sec-tight rv" style="text-align:center;padding-bottom:0;padding-left:0;padding-right:0">
@@ -1116,7 +1113,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow gold rv">07 · Instalaciones</div>
       <h1 class="rv d1">La fase inicial,<br>en dos <span class="grad-gold">escenarios</span></h1>
-      <p class="lead rv d2" style="margin-top:14px">El proyecto arranca en dos espacios a una cuadra el uno del otro: la cancha privada donde entrena el club todos los días y la cancha del parque, abierta a toda Nueva Loja.</p>
+      <p class="lead rv d2" style="margin-top:14px">El proyecto arranca en dos espacios a una cuadra el uno del otro: la cancha privada donde entrena el club de lunes a viernes y la cancha del parque, abierta a toda Nueva Loja.</p>
 
       <div class="grid2">
         <div class="venue glass rv d1">
@@ -1132,14 +1129,14 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           </div>
           <div class="venue-body">
             <h3>La cancha privada</h3>
-            <p>El espacio cerrado de la fase inicial: techada, privada y con zona de espera para las familias. Aquí vive el plan formativo y el reacondicionamiento de las mañanas, de lunes a viernes.</p>
+            <p>La cancha de la fase inicial es techada, privada y cuenta con una zona de espera para las familias. Aquí se realizan las clases del programa formativo y el reacondicionamiento matutino, de lunes a viernes.</p>
           </div>
         </div>
         <div class="venue glass rv d2">
           <div class="venue-body" style="flex:1">
             <span class="chip gold" style="margin-bottom:14px">A una cuadra del club</span>
             <h3>La cancha del parque</h3>
-            <p>El escenario abierto de la fase inicial: jornadas comunitarias, convivencias y entrenamientos abiertos. Aquí el baloncesto de Black Gold se abre a toda Nueva Loja, empezando por el barrio.</p>
+            <p>Un espacio para jornadas comunitarias, convivencias y entrenamientos abiertos a toda Nueva Loja, empezando por el barrio.</p>
             <div class="rule" style="margin:16px 0"></div>
             <p style="margin-bottom:0">Dos espacios, un mismo método: el dato manda, el nivel se mide y el crecimiento se ve desde la app.</p>
           </div>
