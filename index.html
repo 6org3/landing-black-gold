@@ -285,7 +285,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .launch-note{margin-top:20px;padding-left:16px;border-left:3px solid var(--success)}
 .launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 @media(max-width:800px){.launch-grid{grid-template-columns:repeat(2,1fr)}.launch-step:nth-child(2){border-right:0}.launch-step:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-@media(max-width:560px){.launch-grid{grid-template-columns:1fr}.launch-step,.launch-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.launch-step:last-child{border-bottom:0}.launch-actions .btn{width:100%;justify-content:center}}
+@media(max-width:560px){.launch-grid{grid-template-columns:1fr}.launch-step,.launch-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.launch-step:last-child{border-bottom:0}.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
 
 /* ---------- horarios ---------- */
 .sched{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:34px}
@@ -374,6 +374,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .menu-cue{font-family:var(--f-body);font-weight:700;font-size:11px;letter-spacing:.24em;color:#D4AF37;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;flex:none}
 .cue-arrow{flex:none;display:block;animation:cueArrowNudge .9s ease-in-out 1.2s 2}
 @media(max-width:430px){.menu-cue{font-size:0}.menu-cue::before{content:"MENÚ";font-size:11px}}
+@media(max-width:480px){.navin{gap:8px;padding:10px 12px}.menu-btn{width:44px;height:44px}.cue-arrow{display:none}.menu-cue{letter-spacing:.1em}}
 
 #nav:has(#menu-btn.open){z-index:210}
 .menu-ov{position:fixed;inset:0;z-index:200;opacity:0;transition:opacity .16s cubic-bezier(.23,1,.32,1)}
@@ -383,10 +384,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .menu-in::before,.menu-in::after{content:"";flex:1 0 10px}
 .menu-escudo{width:clamp(96px,14vh,150px);height:auto}
 
-.menu-list{display:flex;flex-direction:column;align-items:center;gap:6px}
+.menu-list{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;min-width:0}
 .m-link{
-  display:block;font-family:var(--f-display);font-weight:900;
-  font-size:clamp(32px,6.2vh,54px);line-height:1.06;letter-spacing:.03em;color:#fff;
+  display:block;max-width:100%;min-width:0;font-family:var(--f-display);font-weight:900;
+  font-size:clamp(26px,7vw,48px);line-height:1.12;letter-spacing:.02em;color:#fff;overflow-wrap:anywhere;
   text-transform:uppercase;text-decoration:none;text-align:center;
   opacity:0;transform:translateY(14px);
   transition:opacity .32s cubic-bezier(.23,1,.32,1),transform .32s cubic-bezier(.23,1,.32,1),color .16s cubic-bezier(.23,1,.32,1);
@@ -403,8 +404,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 .m-link:hover{color:var(--gold-500);transform:translateX(4px)}
 .m-link.active{color:var(--gold-500)}
 .m-num{font-size:12px;letter-spacing:.3em;color:rgb(212 175 55/.7);display:block;font-family:var(--f-body);font-weight:600}
-.m-sub{display:block;font-family:var(--f-body);font-weight:300;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgb(255 255 255/.45);margin-top:2px}
-.m-link-long{font-size:clamp(22px,5.6vw,40px)}
+.m-sub{display:block;font-family:var(--f-body);font-weight:400;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-secondary);margin-top:4px}
+.m-link-long{font-size:clamp(20px,5.6vw,40px);letter-spacing:0}
 
 .menu-foot{
   display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:10px;
@@ -551,7 +552,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <a href="#app" class="m-link" data-view-link="app"><span class="m-num">04</span>La App<span class="m-sub">Todo el club, en el bolsillo</span></a>
       <a href="#horarios" class="m-link" data-view-link="horarios"><span class="m-num">05</span>Horarios<span class="m-sub">07:00 – 21:00 · lunes a viernes</span></a>
       <a href="#planes" class="m-link" data-view-link="planes"><span class="m-num">06</span>Desarrollo<span class="m-sub">Planes para niños y jóvenes</span></a>
-      <a href="#plata" class="m-link" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Planes para personas adultas · mañanas</span></a>
+      <a href="#plata" class="m-link m-link-long" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Personas adultas · mañanas</span></a>
       <a href="#instalaciones" class="m-link" data-view-link="instalaciones"><span class="m-num">08</span>Instalaciones<span class="m-sub">Cancha privada y del parque · fase inicial</span></a>
     </nav>
     <div class="menu-foot">
@@ -613,19 +614,20 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
   <section class="sec" id="oferta-apertura">
     <div class="wrap">
       <div class="launch-offer glass rv">
-        <div class="eyebrow gold">Oferta de apertura · solo 7 días</div>
-        <h2 style="margin-top:10px">Entra esta semana y ahorra <span class="grad-gold">$80</span> en tu primer año</h2>
-        <p class="lead" style="margin-top:14px;max-width:62ch">Empieza con $40 y conserva la mensualidad protegida durante once meses. Para grupos juveniles y Clase Ejecutiva; el registro y el pago deben quedar confirmados del <b style="color:var(--fg)">25 al 31 de agosto de 2026</b>.</p>
-        <div class="launch-grid" aria-label="Cronograma de la oferta de apertura">
-          <div class="launch-step"><span class="launch-date">25–31 ago 2026</span><strong class="launch-price">$40</strong><p>Inscripción, septiembre y un uniforme de entrenamiento del color elegido.</p></div>
-          <div class="launch-step"><span class="launch-date">Septiembre 2026</span><strong class="launch-price">$0</strong><p>No hay mensualidad adicional: el primer mes ya está incluido.</p></div>
-          <div class="launch-step"><span class="launch-date">Oct 2026–ago 2027</span><strong class="launch-price">$20</strong><p>Mensualidad protegida durante once meses.</p></div>
-          <div class="launch-step"><span class="launch-date">Desde septiembre 2027</span><strong class="launch-price">$25</strong><p>Nivelación a la tarifa regular.</p></div>
+        <div class="eyebrow gold">Oferta de apertura · septiembre de 2026</div>
+        <h2 style="margin-top:10px">Matricúlate por <span class="grad-gold">$40</span></h2>
+        <p class="lead" style="margin-top:14px;max-width:62ch">Para grupos juveniles y Clase Ejecutiva. Confirma tu matrícula y pago del <b style="color:var(--fg)">1 al 30 de septiembre de 2026</b> y accede al período gratuito y a la tarifa protegida.</p>
+        <div class="launch-grid" aria-label="Fechas y condiciones de la oferta de septiembre">
+          <div class="launch-step"><span class="launch-date">1–30 sep 2026</span><strong class="launch-price">$40</strong><p>Matrícula con un uniforme de entrenamiento del color elegido.</p></div>
+          <div class="launch-step"><span class="launch-date">15 sep–15 oct 2026</span><strong class="launch-price">$0</strong><p>Período gratuito con fechas fijas: del 15 de septiembre al 15 de octubre.</p></div>
+          <div class="launch-step"><span class="launch-date">Desde el 15 oct 2026</span><strong class="launch-price">$20</strong><p>Mensualidad protegida hasta agosto de 2027. El corte es el día 15 de cada mes.</p></div>
+          <div class="launch-step"><span class="launch-date">Desde septiembre de 2027</span><strong class="launch-price">$25</strong><p>Mensualidad regular.</p></div>
         </div>
-        <p class="launch-note"><b style="color:var(--fg)">Uniforme de entrenamiento:</b> se entrega al terminar septiembre. El uniforme de presentación y las demás prendas de presentación se adquieren aparte. El descuento familiar de 20% se aplica al total de las mensualidades, no a las inscripciones.</p>
+        <p class="launch-note"><b style="color:var(--fg)">El mes gratis tiene un corte fijo:</b> termina el <b style="color:var(--fg)">15 de octubre de 2026</b>, independientemente del día de matrícula. Por ejemplo, si te matriculas el 30 de septiembre, entrenas sin mensualidad hasta el 15 de octubre; ese día comienza tu primer período de pago. No se cuentan 30 días desde tu matrícula.</p>
+        <p class="launch-note"><b style="color:var(--fg)">Uniforme:</b> confirma talla, disponibilidad y fecha de entrega al matricularte. Las prendas de presentación son extras. El descuento familiar del 20% se aplica al total de las mensualidades, no a las matrículas.</p>
         <div class="launch-actions">
-          <a class="btn btn-wa" data-wa="Quiero la oferta de apertura del 25 al 31 de agosto: $40 con septiembre y uniforme de entrenamiento incluidos. #OfertaApertura">Consultar la oferta</a>
-          <a class="btn btn-ghost" href="https://app.blackgoldec.com/registro">Ir al registro en la app</a>
+          <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Registrarme en BlackGoldAPP</a>
+          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #OfertaApertura">Consultar condiciones vigentes</a>
         </div>
       </div>
     </div>
@@ -635,7 +637,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow rv">El uniforme</div>
       <h2 class="rv d1">Se viste<br><span class="grad-gold">de club</span></h2>
-      <p class="lead rv d2" style="margin-top:14px">El uniforme de entrenamiento lleva el escudo del club y se elige al inscribirse. En la oferta de apertura se entrega al terminar septiembre; las prendas de presentación se adquieren aparte.</p>
+      <p class="lead rv d2" style="margin-top:14px">La oferta de septiembre incluye un uniforme de entrenamiento con el escudo del club. Elige el color y confirma talla, disponibilidad y fecha de entrega al inscribirte. Las prendas de presentación son extras.</p>
       <div class="gallery">
         <div class="frame glass uniforme rv d1">
           <picture><source srcset="assets/uniforme.webp" type="image/webp"><img class="foto-real" src="assets/uniforme.jpg" alt="Mockup oficial del uniforme de Black Gold" loading="lazy" decoding="async"></picture>
@@ -701,9 +703,9 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 
   <section class="sec-tight rv" style="text-align:center">
     <div class="wrap">
-      <h2 class="rv">Pruebas gratuitas<br><span class="grad-gold">desde septiembre</span></h2>
-      <p class="lead rv d1" style="margin:14px auto 24px;max-width:48ch">Desde el 1 de septiembre tu hijo podrá entrenar una vez sin costo. La sesión se coordina previamente y depende del cupo del horario.</p>
-      <a class="btn btn-wa rv d2" data-wa="Quiero consultar una sesión de prueba gratuita desde septiembre. #Prueba">Consultar una sesión de prueba</a>
+      <h2 class="rv">Una sesión de prueba<br><span class="grad-gold">sin costo</span></h2>
+      <p class="lead rv d1" style="margin:14px auto 24px;max-width:48ch">Tu hijo puede conocer el club con una sesión de entrenamiento gratuita, previa coordinación y sujeta a disponibilidad en el horario elegido.</p>
+      <a class="btn btn-wa rv d2" data-wa="Quiero coordinar una sesión de prueba gratuita para mi hijo. #Prueba">Consultar una sesión de prueba</a>
       <div class="matricula glass rv d3" style="max-width:780px;margin:28px auto 0;text-align:left">
         <div>
           <div class="tag-label">Beneficio familiar</div>
@@ -932,7 +934,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="mp-head">
             <div class="avatar">F</div>
             <div>
-              <div class="mp-title">Vista de la familia</div>
+              <div class="mp-title">Vista de la familia · ejemplo</div>
               <div class="mp-name">Asistencia, pagos y progreso</div>
             </div>
           </div>
@@ -943,14 +945,14 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="track sm"><div class="fill regular" data-w="34"></div></div>
           <div class="mp-row"><span>Nivel actual</span><span class="chip gold">⭐ Élite</span></div>
           <div class="mp-row"><span>Estado de pagos</span><span class="chip success"><i class="dot" style="background:var(--success)"></i> Al día</span></div>
-          <div class="mp-row"><span>Aviso</span><b style="font-weight:600;text-align:right">Reevaluación el 15 de agosto</b></div>
+          <div class="mp-row"><span>Aviso</span><b style="font-weight:600;text-align:right">Próxima reevaluación</b></div>
         </div>
 
         <div class="miniphone glass rv d2">
           <div class="mp-head">
             <div class="avatar">A</div>
             <div>
-              <div class="mp-title">Vista del atleta</div>
+              <div class="mp-title">Vista del atleta · ejemplo</div>
               <div class="mp-name">Misiones, XP y racha</div>
             </div>
           </div>
@@ -1024,8 +1026,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="hora">19:30–21:00</div>
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
-          <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Cupos limitados.</p>
-          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Del 25 al 31 de agosto aplica la oferta de $40 con septiembre y uniforme de entrenamiento incluidos.</p>
+          <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Tarifa regular · Cupos limitados.</p>
+          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Confirma tu matrícula y pago del 1 al 30 de septiembre de 2026: $40 con uniforme de entrenamiento. El período gratuito es fijo, del 15 de septiembre al 15 de octubre de 2026, aunque te matricules el 30 de septiembre. Desde el 15 de octubre, la mensualidad es de $20 hasta agosto de 2027, con corte el día 15; desde septiembre de 2027 se nivela a $25.</p>
           <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y la oferta de apertura. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
         </div>
       </div>
