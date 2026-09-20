@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#09090B">
+  <title></title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      background: #09090B;
+    }
+
+    body {
+      padding: clamp(18px, 4vw, 64px);
+    }
+
+    main {
+      width: min(1800px, 100%);
+      margin: 0 auto;
+    }
+
+    section {
+      display: grid;
+      gap: clamp(18px, 3vw, 48px);
+      align-items: stretch;
+    }
+
+    .vectors {
+      grid-template-columns: minmax(220px, 0.8fr) minmax(220px, 0.8fr) minmax(360px, 1.4fr);
+    }
+
+    .garments {
+      grid-template-columns: repeat(2, minmax(320px, 1fr));
+      margin-top: clamp(42px, 8vw, 112px);
+    }
+
+    a {
+      min-width: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid #28282E;
+      border-radius: 22px;
+      background: #0D0D0F;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 4px solid #FFD700;
+      outline-offset: 5px;
+    }
+
+    .vectors img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 84vh;
+      object-fit: contain;
+    }
+
+    .vectors a:nth-child(-n + 2) img {
+      padding: clamp(18px, 4vw, 58px);
+    }
+
+    .garments img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #F4F4F2;
+    }
+
+    @media (max-width: 1040px) {
+      .vectors,
+      .garments {
+        grid-template-columns: 1fr;
+      }
+
+      .vectors img {
+        max-height: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="vectors">
+      <a href="assets/logo-black-gold-oficial-vector.svg" download aria-label="Descargar logo oficial vectorizado">
+        <img src="assets/logo-black-gold-oficial-vector.svg" alt="">
+      </a>
+      <a href="assets/jaguar-black-gold-compacto-vector.svg" download aria-label="Descargar jaguar compacto vectorizado">
+        <img src="assets/jaguar-black-gold-compacto-vector.svg" alt="">
+      </a>
+      <a href="assets/patron-black-gold-06-alto-contraste-4x-vector.svg" download aria-label="Descargar patron botanico vectorizado">
+        <img src="assets/patron-black-gold-06-alto-contraste-4x-vector.svg" alt="">
+      </a>
+    </section>
+    <section class="garments">
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/01-uniforme-juego-negro-adulto.png" download aria-label="Descargar uniforme de juego negro">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/01-uniforme-juego-negro-adulto.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/02-uniforme-juego-dorado-adulto.png" download aria-label="Descargar uniforme de juego dorado">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/02-uniforme-juego-dorado-adulto.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/03-mujer-cuello-v-sin-mangas.png" download aria-label="Descargar mujer cuello V sin mangas">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/03-mujer-cuello-v-sin-mangas.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/04-mujer-cuello-v-manga-corta.png" download aria-label="Descargar mujer cuello V manga corta">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/04-mujer-cuello-v-manga-corta.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/05-mujer-cuello-v-manga-larga.png" download aria-label="Descargar mujer cuello V manga larga">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/05-mujer-cuello-v-manga-larga.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/06-mujer-polo-sin-mangas.png" download aria-label="Descargar mujer polo sin mangas">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/06-mujer-polo-sin-mangas.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/07-mujer-polo-manga-corta.png" download aria-label="Descargar mujer polo manga corta">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/07-mujer-polo-manga-corta.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/08-mujer-polo-manga-larga.png" download aria-label="Descargar mujer polo manga larga">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/08-mujer-polo-manga-larga.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/09-hombre-cuello-v-manga-corta.png" download aria-label="Descargar hombre cuello V manga corta">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/09-hombre-cuello-v-manga-corta.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/10-hombre-cuello-v-manga-larga.png" download aria-label="Descargar hombre cuello V manga larga">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/10-hombre-cuello-v-manga-larga.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/11-hombre-polo-manga-corta.png" download aria-label="Descargar hombre polo manga corta">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/11-hombre-polo-manga-corta.png" alt="">
+      </a>
+      <a href="entrega-illustrator-y-referencias/02-referencias-prendas-4k/12-hombre-polo-manga-larga.png" download aria-label="Descargar hombre polo manga larga">
+        <img src="entrega-illustrator-y-referencias/02-referencias-prendas-4k/12-hombre-polo-manga-larga.png" alt="">
+      </a>
+    </section>
+  </main>
+</body>
+</html>
