@@ -276,15 +276,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 /* ---------- oferta de apertura ---------- */
 .launch-offer{position:relative;overflow:hidden;padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.28)}
 .launch-offer:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold-700),var(--gold-400),var(--gold-700))}
-.launch-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:30px;border:1px solid var(--line)}
+.launch-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:24px;border:1px solid var(--line)}
 .launch-step{min-width:0;padding:22px;border-right:1px solid var(--line)}
 .launch-step:last-child{border-right:0}
 .launch-date{display:block;min-height:38px;color:var(--gold-400);font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
 .launch-price{display:block;margin:14px 0 12px;color:var(--fg);font-family:var(--f-display);font-size:clamp(34px,5vw,58px);font-weight:850;line-height:1}
 .launch-step p,.launch-note{color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
 .launch-note{margin-top:20px;padding-left:16px;border-left:3px solid var(--success)}
+.launch-details{margin-top:20px;border-top:1px solid var(--line)}
+.launch-details summary{padding:14px 0;cursor:pointer;color:var(--fg);font-weight:700;min-height:44px}
+.launch-details summary:focus-visible{outline:2px solid var(--gold-400);outline-offset:4px}
+.launch-details p{margin:0 0 12px;color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
 .launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-@media(max-width:800px){.launch-grid{grid-template-columns:repeat(2,1fr)}.launch-step:nth-child(2){border-right:0}.launch-step:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:560px){.launch-grid{grid-template-columns:1fr}.launch-step,.launch-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.launch-step:last-child{border-bottom:0}.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
 
 /* ---------- horarios ---------- */
@@ -615,19 +618,21 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="launch-offer glass rv">
         <div class="eyebrow gold">Oferta de apertura · septiembre de 2026</div>
-        <h2 style="margin-top:10px">Matricúlate por <span class="grad-gold">$40</span></h2>
-        <p class="lead" style="margin-top:14px;max-width:62ch">Para grupos juveniles y Clase Ejecutiva. Confirma tu matrícula y pago del <b style="color:var(--fg)">1 al 30 de septiembre de 2026</b> y accede al período gratuito y a la tarifa protegida.</p>
-        <div class="launch-grid" aria-label="Fechas y condiciones de la oferta de septiembre">
-          <div class="launch-step"><span class="launch-date">1–30 sep 2026</span><strong class="launch-price">$40</strong><p>Matrícula con un uniforme de entrenamiento del color elegido.</p></div>
-          <div class="launch-step"><span class="launch-date">15 sep–15 oct 2026</span><strong class="launch-price">$0</strong><p>Período gratuito con fechas fijas: del 15 de septiembre al 15 de octubre.</p></div>
-          <div class="launch-step"><span class="launch-date">Desde el 15 oct 2026</span><strong class="launch-price">$20</strong><p>Mensualidad protegida hasta agosto de 2027. El corte es el día 15 de cada mes.</p></div>
-          <div class="launch-step"><span class="launch-date">Desde septiembre de 2027</span><strong class="launch-price">$25</strong><p>Mensualidad regular.</p></div>
+        <h2 style="margin-top:10px">Matrícula + uniforme por <span class="grad-gold">$40</span></h2>
+        <p class="lead" style="margin-top:14px;max-width:62ch">Para grupos juveniles y Clase Ejecutiva. Matricúlate y paga del <b style="color:var(--fg)">1 al 30 de septiembre de 2026</b>.</p>
+        <div class="launch-grid" aria-label="Mensualidades de la oferta de septiembre">
+          <div class="launch-step"><span class="launch-date">Hasta el 10 de octubre de 2026</span><strong class="launch-price">$0</strong><p>Entrena sin mensualidad hasta esa fecha, sin importar cuándo te matricules.</p></div>
+          <div class="launch-step"><span class="launch-date">Desde el 10 de octubre de 2026</span><strong class="launch-price">$20/mes</strong><p>Hasta agosto de 2027. Después, $25/mes.</p></div>
         </div>
-        <p class="launch-note"><b style="color:var(--fg)">El mes gratis tiene un corte fijo:</b> termina el <b style="color:var(--fg)">15 de octubre de 2026</b>, independientemente del día de matrícula. Por ejemplo, si te matriculas el 30 de septiembre, entrenas sin mensualidad hasta el 15 de octubre; ese día comienza tu primer período de pago. No se cuentan 30 días desde tu matrícula.</p>
-        <p class="launch-note"><b style="color:var(--fg)">Uniforme:</b> confirma talla, disponibilidad y fecha de entrega al matricularte. Las prendas de presentación son extras. El descuento familiar del 20% se aplica al total de las mensualidades, no a las matrículas.</p>
+        <details class="launch-details">
+          <summary>Ver condiciones de la promoción</summary>
+          <p><b>Fechas:</b> el período sin mensualidad va del 15 de septiembre al 10 de octubre de 2026; no son 30 días desde tu matrícula. El primer período de pago empieza el 10 de octubre, con corte el día 10 de cada mes. Desde septiembre de 2027, la mensualidad regular es de $25.</p>
+          <p><b>Uniforme:</b> incluye uno de entrenamiento del color elegido. Confirma talla, disponibilidad y entrega al matricularte. Las prendas de presentación son extras.</p>
+          <p><b>Descuento familiar:</b> 20% sobre el total de las mensualidades de dos o más familiares activos; no aplica a matrículas. Se valida con el equipo.</p>
+        </details>
         <div class="launch-actions">
-          <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Registrarme en BlackGoldAPP</a>
-          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #OfertaApertura">Consultar condiciones vigentes</a>
+          <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Registrarme</a>
+          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #OfertaApertura">Consultar por WhatsApp</a>
         </div>
       </div>
     </div>
@@ -1027,7 +1032,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
           <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Tarifa regular · Cupos limitados.</p>
-          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Confirma tu matrícula y pago del 1 al 30 de septiembre de 2026: $40 con uniforme de entrenamiento. El período gratuito es fijo, del 15 de septiembre al 15 de octubre de 2026, aunque te matricules el 30 de septiembre. Desde el 15 de octubre, la mensualidad es de $20 hasta agosto de 2027, con corte el día 15; desde septiembre de 2027 se nivela a $25.</p>
+          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Matrícula + uniforme de entrenamiento: $40 al matricularte y pagar del 1 al 30 de septiembre de 2026. Sin mensualidad del 15 de septiembre al 10 de octubre; la fecha final no cambia según tu matrícula. Desde el 10 de octubre: $20/mes hasta agosto de 2027, con corte el día 10. Desde septiembre de 2027: $25/mes.</p>
           <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y la oferta de apertura. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
         </div>
       </div>
