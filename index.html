@@ -290,6 +290,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 @media(max-width:560px){.launch-grid{grid-template-columns:1fr}.launch-step,.launch-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.launch-step:last-child{border-bottom:0}.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
 
+/* ---------- beneficio familiar ---------- */
+.family-benefit{padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.4);background:linear-gradient(120deg,rgba(255,215,0,.08),transparent 70%),var(--surface-base)}
+.family-benefit h2{margin-top:14px}
+.family-benefit .lead{margin-top:20px;max-width:58ch}
+.family-terms{margin:14px 0 24px;color:var(--fg-secondary);font-size:clamp(15px,2vw,17px);line-height:1.6}
+@media(max-width:560px){.family-benefit .btn{width:100%;justify-content:center;text-align:center;white-space:normal;padding:14px 16px}}
+
 /* ---------- horarios ---------- */
 .sched{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:34px}
 @media(max-width:900px){.sched{grid-template-columns:1fr}}
@@ -638,6 +645,18 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     </div>
   </section>
 
+  <section class="sec-tight" id="beneficio-familiar" aria-labelledby="beneficio-familiar-titulo">
+    <div class="wrap">
+      <div class="family-benefit glass rv">
+        <div class="eyebrow gold">Beneficio familiar</div>
+        <h2 id="beneficio-familiar-titulo">Entrena en familia.<br><span class="grad-gold">20% menos en mensualidades.</span></h2>
+        <p class="lead">Con dos o más familiares activos en Black Gold, reciben un 20% de descuento sobre la suma de sus mensualidades, aunque entrenen en horarios distintos.</p>
+        <p class="family-terms">No aplica a matrículas. El equipo valida el beneficio.</p>
+        <a class="btn btn-wa" data-wa="Quiero consultar el beneficio familiar del 20% para dos o más familiares activos. #BeneficioFamiliar">Consultar beneficio familiar</a>
+      </div>
+    </div>
+  </section>
+
 <section class="sec" id="uniforme-sec">
     <div class="wrap">
       <div class="eyebrow rv">El uniforme</div>
@@ -655,69 +674,13 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 
   
 
-  <section class="sec" id="bento-grid">
-    <div class="wrap">
-      <div class="eyebrow rv">Explora el club</div>
-      <h2 class="rv d1">Seis puertas.<br>Una sola cancha.</h2>
-      <div class="bento">
-        <a class="bcard glass rv d1" href="#planes">
-          <div class="eyebrow gold">01</div>
-          <h3>Desarrollo</h3>
-          <p>Grupos por nivel, no por edad. Tres escalones de cancha compartida.</p>
-          <div class="hook">$25–$75 · más días, grupo más chico</div>
-          <span class="go">Entrar →</span>
-        </a>
-        <a class="bcard glass rv d2" href="#plata">
-          <div class="eyebrow gold">02</div>
-          <h3>Reacondicionamiento</h3>
-          <p>La mañana es para personas adultas. Movilidad, fuerza y cardio por nivel.</p>
-          <div class="hook">Personas adultas · por nivel de movilidad</div>
-          <span class="go">Entrar →</span>
-        </a>
-        <a class="bcard glass rv d3" href="#metodo">
-          <div class="eyebrow gold">03</div>
-          <h3>Método</h3>
-          <p>Se mide antes de asignar nivel. Reevaluación cada trimestre.</p>
-          <div class="hook">Micro · Desarrollo · Élite</div>
-          <span class="go">Entrar →</span>
-        </a>
-        <a class="bcard glass rv d1" href="#app">
-          <div class="eyebrow gold">04</div>
-          <h3>La App</h3>
-          <p>Asistencia, progreso y pagos para la familia. Misiones y XP para el atleta.</p>
-          <div class="hook">Todo el club, en el bolsillo</div>
-          <span class="go">Entrar →</span>
-        </a>
-        <a class="bcard glass rv d2" href="#horarios">
-          <div class="eyebrow gold">05</div>
-          <h3>Horarios</h3>
-          <p>Cuatro franjas, una sola cancha todo el día.</p>
-          <div class="hook">07:00 – 21:00 · de lunes a viernes</div>
-          <span class="go">Entrar →</span>
-        </a>
-        <a class="bcard glass rv d3" href="#nosotros">
-          <div class="eyebrow gold">06</div>
-          <h3>Nosotros</h3>
-          <p>Un equipo de entrenadores con criterio y una gestión que no improvisa.</p>
-          <div class="hook">Entrenadores + gestión, un solo club</div>
-          <span class="go">Entrar →</span>
-        </a>
-      </div>
-    </div>
-  </section>
+
 
   <section class="sec-tight rv" style="text-align:center">
     <div class="wrap">
       <h2 class="rv">Una sesión de prueba<br><span class="grad-gold">sin costo</span></h2>
       <p class="lead rv d1" style="margin:14px auto 24px;max-width:48ch">Tu hijo puede conocer el club con una sesión de entrenamiento gratuita, previa coordinación y sujeta a disponibilidad en el horario elegido.</p>
       <a class="btn btn-wa rv d2" data-wa="Quiero coordinar una sesión de prueba gratuita para mi hijo. #Prueba">Consultar una sesión de prueba</a>
-      <div class="matricula glass rv d3" style="max-width:780px;margin:28px auto 0;text-align:left">
-        <div>
-          <div class="tag-label">Beneficio familiar</div>
-          <div class="amt">20%</div>
-        </div>
-        <p>Si dos o más familiares están activos en Black Gold, reciben 20% de descuento sobre la suma de sus mensualidades, aunque entrenen en horarios distintos. No aplica a matrículas y se valida con el equipo.</p>
-      </div>
     </div>
   </section>
 
