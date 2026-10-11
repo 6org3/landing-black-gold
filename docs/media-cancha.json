@@ -190,5 +190,128 @@
         }
       ]
     }
-  ]
+  ],
+  "derived_photos": [
+    {
+      "source_title": "IMG_0824.MOV",
+      "source_id": "1bQMc-2czMfWXIlatIa13whM4n9_4_4Zb",
+      "source_url": "https://drive.google.com/file/d/1bQMc-2czMfWXIlatIa13whM4n9_4_4Zb/view?usp=drivesdk",
+      "source_sha256": "7553447208556eeac85b0e43c881ed9a0de35ac7958d74d01d8ea2f7b369d2d7",
+      "timestamp_seconds": 0.2,
+      "caption": "La cancha y sus aros.",
+      "full_frame_preserved": true,
+      "generation_used": false,
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0824-cancha-480.webp",
+          "bytes": 50214,
+          "width": 480,
+          "height": 853,
+          "format": "webp",
+          "sha256": "514e0c48aeb4b07dcaf75727e3320717f4fc623cecfc9422dda2a529cc657961"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-480.jpg",
+          "bytes": 78910,
+          "width": 480,
+          "height": 853,
+          "format": "jpg",
+          "sha256": "90f73ae40d26a306b0b8bb6c5879d80d457bf29a45b530b243428296fa55ba4b"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-720.webp",
+          "bytes": 85448,
+          "width": 720,
+          "height": 1280,
+          "format": "webp",
+          "sha256": "6b99c56c4b06048f07e96e77384d96ce8972a8f95be1026eb68f96e575b98eb7"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-720.jpg",
+          "bytes": 145779,
+          "width": 720,
+          "height": 1280,
+          "format": "jpg",
+          "sha256": "68a3867dfbf8c6ea3cca363816a631939b6fe1f814bf72e335c0ceaee7861bf8"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-1080.webp",
+          "bytes": 137198,
+          "width": 1080,
+          "height": 1920,
+          "format": "webp",
+          "sha256": "ccc52ff499b04192652cd7d21e26db56223c25ec94984766075450befe2e3f52"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-1080.jpg",
+          "bytes": 258915,
+          "width": 1080,
+          "height": 1920,
+          "format": "jpg",
+          "sha256": "331156dccefecb4164ee1a93c1be12c3f439599efe9673e854682ce840ff0f32"
+        }
+      ]
+    },
+    {
+      "source_title": "IMG_0778.MOV",
+      "source_id": "1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT",
+      "source_url": "https://drive.google.com/file/d/1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT/view?usp=drivesdk",
+      "source_sha256": "ef765b832dbf0dd4d3fac9180e18bdfa1085208e46b74da24628bb0c29e3fa09",
+      "timestamp_seconds": 5.2,
+      "caption": "Aro pequeño para minibasket.",
+      "full_frame_preserved": true,
+      "generation_used": false,
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-480.webp",
+          "bytes": 46382,
+          "width": 480,
+          "height": 853,
+          "format": "webp",
+          "sha256": "fbdb451e944ce069d4929a022e91f8b6a46c1828d0eb3261829fa2aab5a47be3"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-480.jpg",
+          "bytes": 74013,
+          "width": 480,
+          "height": 853,
+          "format": "jpg",
+          "sha256": "c1d6f38baeccd6994c6b62a18f0e8a9c40f10284f27b547935f3cf6eba7f598e"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-720.webp",
+          "bytes": 75124,
+          "width": 720,
+          "height": 1280,
+          "format": "webp",
+          "sha256": "c3cba63f415819012534016d90c7c4e4aa9d1205a9298856d331dd9bc7078cf3"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-720.jpg",
+          "bytes": 135259,
+          "width": 720,
+          "height": 1280,
+          "format": "jpg",
+          "sha256": "8c9cdfe1ed88848dbd2c36ee4f193c71d1c88260fcbee34e8578e5a15329acf8"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-1080.webp",
+          "bytes": 117564,
+          "width": 1080,
+          "height": 1920,
+          "format": "webp",
+          "sha256": "d222008f285fef34b768b74e5dc0dd95aa143480a9a2828aba109912d8882aa4"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-1080.jpg",
+          "bytes": 235567,
+          "width": 1080,
+          "height": 1920,
+          "format": "jpg",
+          "sha256": "48f043b8cb5f6349d6ee2767c5764b9058d02e8cb10c142267254195c980cf8c"
+        }
+      ]
+    }
+  ],
+  "derived_photo_selection": "Owner-selected court overview at IMG_0824 0.20 s and an additional small-basket view at IMG_0778 5.20 s. These frames do not establish seven baskets, regulation heights, or the location of every small basket."
 }

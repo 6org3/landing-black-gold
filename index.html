@@ -514,11 +514,12 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 }
 
 .court-media{margin-top:34px}.court-media h2{margin-bottom:18px}
+.court-photos{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px}.court-photo{margin:0;overflow:hidden}.court-photo img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain}
 .court-group{margin:0 0 22px;overflow:hidden}.court-group img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
 .court-media figcaption{padding:16px 20px;color:var(--fg-secondary);font-size:16px;line-height:1.5}
 .court-clips{display:grid;grid-template-columns:1fr 1fr;gap:22px}.court-clip{margin:0;overflow:hidden;display:flex;flex-direction:column;align-items:center}
 .court-clip video{display:block;width:100%;max-width:360px;height:auto;aspect-ratio:9/16;object-fit:contain;background:#000}.court-clip figcaption{align-self:stretch}
-@media(max-width:640px){.court-clips{grid-template-columns:1fr}.court-media figcaption{font-size:17px}}
+@media(max-width:640px){.court-photos,.court-clips{grid-template-columns:1fr}.court-media figcaption{font-size:17px}}
 
 </style>
 </head>
@@ -1129,6 +1130,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <section class="court-media" id="galeria-cancha" aria-labelledby="court-title">
         <div class="eyebrow gold">La cancha en acción</div>
         <h2 id="court-title">Así entrenamos</h2>
+        <div class="court-photos">
+          <figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0824-cancha-480.webp 480w, assets/cancha/IMG_0824-cancha-720.webp 720w, assets/cancha/IMG_0824-cancha-1080.webp 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px"><img src="assets/cancha/IMG_0824-cancha-720.jpg" srcset="assets/cancha/IMG_0824-cancha-480.jpg 480w, assets/cancha/IMG_0824-cancha-720.jpg 720w, assets/cancha/IMG_0824-cancha-1080.jpg 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px" width="1080" height="1920" alt="Vista de la cancha techada con varios aros de baloncesto y un grupo durante el entrenamiento" loading="lazy" decoding="async"></picture><figcaption>La cancha y sus aros.</figcaption></figure>
+          <figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0778-minibasket-480.webp 480w, assets/cancha/IMG_0778-minibasket-720.webp 720w, assets/cancha/IMG_0778-minibasket-1080.webp 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px"><img src="assets/cancha/IMG_0778-minibasket-720.jpg" srcset="assets/cancha/IMG_0778-minibasket-480.jpg 480w, assets/cancha/IMG_0778-minibasket-720.jpg 720w, assets/cancha/IMG_0778-minibasket-1080.jpg 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px" width="1080" height="1920" alt="Aro pequeño negro junto a un tablero grande de baloncesto, durante un ejercicio de manejo de balón" loading="lazy" decoding="async"></picture><figcaption>Aro pequeño para minibasket.</figcaption></figure>
+        </div>
         <figure class="court-group glass">
           <picture><source type="image/webp" srcset="assets/cancha/IMG_0762-640.webp 640w, assets/cancha/IMG_0762-1200.webp 1200w, assets/cancha/IMG_0762-1920.webp 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px"><img src="assets/cancha/IMG_0762-1200.jpg" srcset="assets/cancha/IMG_0762-640.jpg 640w, assets/cancha/IMG_0762-1200.jpg 1200w, assets/cancha/IMG_0762-1920.jpg 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px" width="1920" height="1080" alt="Grupo de baloncesto en la cancha techada, con dos tableros y aros al fondo" loading="lazy" decoding="async"></picture>
           <figcaption>Un grupo que aprende y crece en la cancha.</figcaption>
