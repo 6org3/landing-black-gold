@@ -561,7 +561,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <a href="#nosotros" class="m-link" data-view-link="nosotros"><span class="m-num">02</span>Nosotros<span class="m-sub">Un equipo de entrenadores, un sistema</span></a>
       <a href="#metodo" class="m-link" data-view-link="metodo"><span class="m-num">03</span>Método<span class="m-sub">Biomecánica y niveles reales</span></a>
       <a href="#app" class="m-link" data-view-link="app"><span class="m-num">04</span>La App<span class="m-sub">Todo el club, en el bolsillo</span></a>
-      <a href="#horarios" class="m-link" data-view-link="horarios"><span class="m-num">05</span>Horarios<span class="m-sub">07:00 – 21:00 · lunes a viernes</span></a>
+      <a href="#horarios" class="m-link" data-view-link="horarios"><span class="m-num">05</span>Horarios<span class="m-sub">07:00 – 20:30 · lunes a viernes</span></a>
       <a href="#planes" class="m-link" data-view-link="planes"><span class="m-num">06</span>Desarrollo<span class="m-sub">Planes para niños y jóvenes</span></a>
       <a href="#plata" class="m-link m-link-long" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Personas adultas · mañanas</span></a>
       <a href="#instalaciones" class="m-link" data-view-link="instalaciones"><span class="m-num">08</span>Instalaciones<span class="m-sub">Cancha privada y del parque · fase inicial</span></a>
@@ -977,7 +977,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         </div>
         <div class="slot glass rv d4">
           <span class="chip gold" style="margin-bottom:14px;display:inline-flex">Nuevo</span>
-          <div class="hora">19:30–21:00</div>
+          <div class="hora">19:00–20:30</div>
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
           <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Tarifa regular · Cupos limitados.</p>
@@ -1169,7 +1169,11 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 
   var barObserver=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
-      if(e.isIntersecting){ animateBar(e.target); barObserver.unobserve(e.target); }
+      if(e.isIntersecting){
+        var fill=e.target.querySelector('.fill[data-w]');
+        if(fill) animateBar(fill);
+        barObserver.unobserve(e.target);
+      }
     });
   },{threshold:.3});
 
@@ -1205,7 +1209,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     bars.forEach(function(f){ f.style.transform='scaleX(0)'; });
     requestAnimationFrame(function(){
       revs.forEach(function(el){ revealObserver.observe(el); });
-      bars.forEach(function(f){ barObserver.observe(f); });
+      // Observe the track: scaleX(0) gives the fill a zero-width intersection target.
+      bars.forEach(function(f){ barObserver.observe(f.parentElement); });
     });
   }
 
