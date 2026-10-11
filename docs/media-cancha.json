@@ -1,0 +1,194 @@
+{
+  "selection_date": "2026-10-11",
+  "folder_url": "https://drive.google.com/drive/folders/1g_6FBAWQneJZcocbkqpcQRnBXzChiCgU",
+  "placement": "Instalaciones / Así entrenamos",
+  "originals_preserved": true,
+  "full_frame_preserved": true,
+  "generation_used": false,
+  "poster_selection": {
+    "frames_reviewed": 59,
+    "IMG_0778": "5.60 s: three training hoops in the foreground, two backboards and visible faces.",
+    "IMG_0818": "4.70 s: the full backboard, visible faces and a front view of the drill.",
+    "group_photo": "The group photo has the clearest visible smiles."
+  },
+  "files": [
+    {
+      "id": "1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT",
+      "title": "IMG_0778.MOV",
+      "url": "https://drive.google.com/file/d/1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT/view?usp=drivesdk",
+      "mime_type": "video/quicktime",
+      "size": "28003609",
+      "created_time": "2026-10-11T17:19:43.804Z",
+      "sha256": "ef765b832dbf0dd4d3fac9180e18bdfa1085208e46b74da24628bb0c29e3fa09",
+      "original": {
+        "codec": "hevc",
+        "image_size": null,
+        "encoded_size": [
+          1920,
+          1080
+        ],
+        "duration": "18.478333",
+        "rotation": -90
+      },
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0778-854.mp4",
+          "bytes": 2910879,
+          "width": 480,
+          "height": 854,
+          "duration": 18.476667,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "b1ab317e84b5ce86510928191f5109ad011f2585d49573242ec267a67650053b"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-1280.mp4",
+          "bytes": 5188168,
+          "width": 720,
+          "height": 1280,
+          "duration": 18.476667,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "0b3933d78d8271fc072b5d248e7d37dff00dae85bed630bce2b4c4e05e3a507f"
+        }
+      ],
+      "poster": {
+        "path": "assets/cancha/IMG_0778-poster.jpg",
+        "source_time_seconds": 5.6,
+        "width": 480,
+        "height": 854,
+        "bytes": 78176,
+        "sha256": "56b6aa18edaaa39ac8f6ac20a699e29b2b9c25ff38b6f04b52dca66e56d177dd"
+      }
+    },
+    {
+      "id": "11iUweoUhAPnwF3ZiOyaL7FiIxIICts90",
+      "title": "IMG_0818.MOV",
+      "url": "https://drive.google.com/file/d/11iUweoUhAPnwF3ZiOyaL7FiIxIICts90/view?usp=drivesdk",
+      "mime_type": "video/quicktime",
+      "size": "17070150",
+      "created_time": "2026-10-11T17:19:39.661Z",
+      "sha256": "30c7008344b2b3abb1f65bb3936374aefb59e6ac90bc9402d67fc84b55800fe8",
+      "original": {
+        "codec": "hevc",
+        "image_size": null,
+        "encoded_size": [
+          1920,
+          1080
+        ],
+        "duration": "11.240000",
+        "rotation": -90
+      },
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0818-854.mp4",
+          "bytes": 1881858,
+          "width": 480,
+          "height": 854,
+          "duration": 11.238333,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "7c1e19794be40a6819f7eeec80062ec542cda44cc68a2e186f9415dfb8002a5c"
+        },
+        {
+          "path": "assets/cancha/IMG_0818-1280.mp4",
+          "bytes": 3300158,
+          "width": 720,
+          "height": 1280,
+          "duration": 11.238333,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "ebe735c95ea69beba657511b5a85e9ac1927eb8efd72ea896f365b37d5c7f4ef"
+        }
+      ],
+      "poster": {
+        "path": "assets/cancha/IMG_0818-poster.jpg",
+        "source_time_seconds": 4.7,
+        "width": 480,
+        "height": 854,
+        "bytes": 82676,
+        "sha256": "930ac3aa5f7c87e49afb83c419c14a5c325ca978d1740f6b7be9b26f231ef398"
+      }
+    },
+    {
+      "id": "1SzwzWkldKO8WTh_57x2dfPQlutIC6bEc",
+      "title": "IMG_0762.HEIC",
+      "url": "https://drive.google.com/file/d/1SzwzWkldKO8WTh_57x2dfPQlutIC6bEc/view?usp=drivesdk",
+      "mime_type": "image/heif",
+      "size": "1319237",
+      "created_time": "2026-10-11T17:19:32.154Z",
+      "sha256": "40779f48da0b832fc0977541436d717281bceba1f1768d46bc7f69de0c1f8e67",
+      "original": {
+        "codec": "hevc",
+        "image_size": [
+          4032,
+          2268
+        ],
+        "encoded_size": [
+          512,
+          512
+        ],
+        "duration": null,
+        "rotation": 0
+      },
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0762-640.webp",
+          "bytes": 46388,
+          "width": 640,
+          "height": 360,
+          "format": "webp",
+          "sha256": "cecb1f7b258182a4d11523db7adb5eaf5386f990630f7354b228b32ac50523cd"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-640.jpg",
+          "bytes": 63335,
+          "width": 640,
+          "height": 360,
+          "format": "jpg",
+          "sha256": "59fecb5a8393360aa379aeebd249df4795c03883e4e9d33470ed71b6db976e86"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1200.webp",
+          "bytes": 122786,
+          "width": 1200,
+          "height": 675,
+          "format": "webp",
+          "sha256": "7dff985282be99180dff2c47aa69a2baa59aad6ebe70f3625f4ad785ad081988"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1200.jpg",
+          "bytes": 183938,
+          "width": 1200,
+          "height": 675,
+          "format": "jpg",
+          "sha256": "7bb21cae347f98c9b3d35334553fb347c9d4a337214de0391289d33e08de61e7"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1920.webp",
+          "bytes": 239704,
+          "width": 1920,
+          "height": 1080,
+          "format": "webp",
+          "sha256": "642a3def6c67f5db6530a33878ffbf1584e682f41acf0e486960b77e8dcc02b7"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1920.jpg",
+          "bytes": 395998,
+          "width": 1920,
+          "height": 1080,
+          "format": "jpg",
+          "sha256": "1765ff1c24be6dc675892eaaa5fd58945a0e4908c10a895cb5f8e91a2751c050"
+        }
+      ]
+    }
+  ]
+}
