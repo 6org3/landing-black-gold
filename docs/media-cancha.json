@@ -1,7 +1,7 @@
 {
   "selection_date": "2026-10-11",
   "folder_url": "https://drive.google.com/drive/folders/1g_6FBAWQneJZcocbkqpcQRnBXzChiCgU",
-  "placement": "Instalaciones / Así entrenamos",
+  "placement": "Hamburger menu: Nosotros / Desarrollo / Metodo / Instalaciones",
   "originals_preserved": true,
   "full_frame_preserved": true,
   "generation_used": false,
@@ -63,7 +63,8 @@
         "height": 854,
         "bytes": 78176,
         "sha256": "56b6aa18edaaa39ac8f6ac20a699e29b2b9c25ff38b6f04b52dca66e56d177dd"
-      }
+      },
+      "placement": "Metodo"
     },
     {
       "id": "11iUweoUhAPnwF3ZiOyaL7FiIxIICts90",
@@ -116,7 +117,8 @@
         "height": 854,
         "bytes": 82676,
         "sha256": "930ac3aa5f7c87e49afb83c419c14a5c325ca978d1740f6b7be9b26f231ef398"
-      }
+      },
+      "placement": "Desarrollo"
     },
     {
       "id": "1SzwzWkldKO8WTh_57x2dfPQlutIC6bEc",
@@ -188,7 +190,8 @@
           "format": "jpg",
           "sha256": "1765ff1c24be6dc675892eaaa5fd58945a0e4908c10a895cb5f8e91a2751c050"
         }
-      ]
+      ],
+      "placement": "Nosotros"
     }
   ],
   "derived_photos": [
@@ -250,7 +253,8 @@
           "format": "jpg",
           "sha256": "331156dccefecb4164ee1a93c1be12c3f439599efe9673e854682ce840ff0f32"
         }
-      ]
+      ],
+      "placement": "Instalaciones"
     },
     {
       "source_title": "IMG_0778.MOV",
@@ -310,8 +314,46 @@
           "format": "jpg",
           "sha256": "48f043b8cb5f6349d6ee2767c5764b9058d02e8cb10c142267254195c980cf8c"
         }
+      ],
+      "placement": "Desarrollo"
+    }
+  ],
+  "derived_photo_selection": "Owner-selected court overview at IMG_0824 0.20 s and an additional small-basket view at IMG_0778 5.20 s. These frames do not establish seven baskets, regulation heights, or the location of every small basket.",
+  "placements": [
+    {
+      "view": "nosotros",
+      "menu_label": "Nosotros",
+      "section_id": "media-nosotros",
+      "media": [
+        "IMG_0762 group photo"
+      ]
+    },
+    {
+      "view": "planes",
+      "menu_label": "Desarrollo",
+      "section_id": "media-desarrollo",
+      "media": [
+        "IMG_0778 minibasket still at 5.20 s",
+        "IMG_0818 video"
+      ]
+    },
+    {
+      "view": "metodo",
+      "menu_label": "Metodo",
+      "section_id": "media-metodo",
+      "media": [
+        "IMG_0778 video"
+      ]
+    },
+    {
+      "view": "instalaciones",
+      "menu_label": "Instalaciones",
+      "section_id": "galeria-cancha",
+      "media": [
+        "IMG_0824 court overview still at 0.20 s"
       ]
     }
   ],
-  "derived_photo_selection": "Owner-selected court overview at IMG_0824 0.20 s and an additional small-basket view at IMG_0778 5.20 s. These frames do not establish seven baskets, regulation heights, or the location of every small basket."
+  "home_media_added": false,
+  "video_navigation": "Pause video playback when leaving its view; keep controls, playsinline, preload=none and no autoplay."
 }

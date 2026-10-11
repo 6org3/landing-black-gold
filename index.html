@@ -513,13 +513,13 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
   .btn{font-size:15px;letter-spacing:.12em;white-space:normal;line-height:1.3}
 }
 
-.court-media{margin-top:34px}.court-media h2{margin-bottom:18px}
-.court-photos{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px}.court-photo{margin:0;overflow:hidden}.court-photo img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain}
-.court-group{margin:0 0 22px;overflow:hidden}.court-group img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.court-media{margin:34px 0}.court-media h2{margin-bottom:18px}
+.court-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.court-single{max-width:540px;margin:0 auto}
+.court-photo{margin:0;overflow:hidden}.court-photo picture{display:block;width:100%;max-width:540px;margin:auto}.court-pair .court-photo picture{max-width:360px}.court-photo img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain}
+.court-group{margin:0;overflow:hidden}.court-group img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
 .court-media figcaption{padding:16px 20px;color:var(--fg-secondary);font-size:16px;line-height:1.5}
-.court-clips{display:grid;grid-template-columns:1fr 1fr;gap:22px}.court-clip{margin:0;overflow:hidden;display:flex;flex-direction:column;align-items:center}
-.court-clip video{display:block;width:100%;max-width:360px;height:auto;aspect-ratio:9/16;object-fit:contain;background:#000}.court-clip figcaption{align-self:stretch}
-@media(max-width:640px){.court-photos,.court-clips{grid-template-columns:1fr}.court-media figcaption{font-size:17px}}
+.court-clip{margin:0;overflow:hidden;display:flex;flex-direction:column;align-items:center}.court-clip video{display:block;width:100%;max-width:360px;height:auto;aspect-ratio:9/16;object-fit:contain;background:#000}.court-clip figcaption{align-self:stretch}
+@media(max-width:640px){.court-pair{grid-template-columns:1fr}.court-media figcaption{font-size:17px}}
 
 </style>
 </head>
@@ -692,6 +692,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <p class="lead rv d2" style="margin-top:14px">Todos los atletas entran al programa formativo y todos reciben la evaluación
         antropométrica de entrada. Lo que cambia entre planes es cuántos comparten la cancha con tu hijo.</p>
 
+      <section class="court-media" id="media-desarrollo" aria-labelledby="media-desarrollo-title">
+        <div class="eyebrow gold">Baloncesto en formación</div>
+        <h2 id="media-desarrollo-title">Así entrenamos</h2>
+        <div class="court-pair">
+          <figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0778-minibasket-480.webp 480w, assets/cancha/IMG_0778-minibasket-720.webp 720w, assets/cancha/IMG_0778-minibasket-1080.webp 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px"><img src="assets/cancha/IMG_0778-minibasket-720.jpg" srcset="assets/cancha/IMG_0778-minibasket-480.jpg 480w, assets/cancha/IMG_0778-minibasket-720.jpg 720w, assets/cancha/IMG_0778-minibasket-1080.jpg 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px" width="1080" height="1920" alt="Aro pequeño negro junto a un tablero grande de baloncesto, durante un ejercicio de manejo de balón" loading="lazy" decoding="async"></picture><figcaption>Aro pequeño para minibasket.</figcaption></figure>
+          <figure class="court-clip glass"><video controls playsinline preload="none" poster="assets/cancha/IMG_0818-poster.jpg" aria-label="Ejercicio de baloncesto con conos y tablero al fondo"><source src="assets/cancha/IMG_0818-854.mp4" type="video/mp4" media="(max-width:640px)"><source src="assets/cancha/IMG_0818-1280.mp4" type="video/mp4">Tu navegador no puede reproducir este video. <a href="assets/cancha/IMG_0818-854.mp4">Abrir el video</a>.</video><figcaption>Práctica de baloncesto en la cancha techada.</figcaption></figure>
+        </div>
+      </section>
+
       <div class="plans">
         <div class="plan glass rv d1">
           <div class="pname">Formativo</div>
@@ -845,6 +854,12 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="eyebrow gold rv">03 · Método</div>
       <h1 class="rv d1">Se mide.<br>Después se <span class="grad-gold">asigna</span>.</h1>
       <p class="lead rv d2" style="margin-top:14px">La mayoría agrupa por edad; nosotros, por lo que el atleta puede hacer hoy, medido con parámetros, no a ojo. La evaluación antropométrica es el primer paso, sin excepción.</p>
+
+      <section class="court-media" id="media-metodo" aria-labelledby="media-metodo-title">
+        <div class="eyebrow gold">El método en la cancha</div>
+        <h2 id="media-metodo-title">Manejo de balón y coordinación</h2>
+        <div class="court-single"><figure class="court-clip glass"><video controls playsinline preload="none" poster="assets/cancha/IMG_0778-poster.jpg" aria-label="Ejercicio de manejo de balón con aros en el piso"><source src="assets/cancha/IMG_0778-854.mp4" type="video/mp4" media="(max-width:640px)"><source src="assets/cancha/IMG_0778-1280.mp4" type="video/mp4">Tu navegador no puede reproducir este video. <a href="assets/cancha/IMG_0778-854.mp4">Abrir el video</a>.</video><figcaption>Manejo de balón y coordinación con aros.</figcaption></figure></div>
+      </section>
 
       <div class="grid3">
         <div class="lvl-card glass rv d1">
@@ -1027,6 +1042,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <h1 class="rv d1">Un equipo de entrenadores,<br>un <span class="grad-gold">sistema</span>.<span class="hero-subtag" style="display:block;font-size:.36em;letter-spacing:.03em;color:var(--fg-secondary);margin-top:10px">Muchas familias, un solo grupo.</span></h1>
       <p class="lead rv d2" style="margin-top:14px">La mayoría de las escuelas son un buen entrenador y una libreta. Nosotros somos un equipo: más de cuatro décadas de experiencia formativa en la cancha, gestión con datos y una app que muestra a la familia cómo va su hijo.</p>
 
+      <section class="court-media" id="media-nosotros" aria-labelledby="media-nosotros-title">
+        <div class="eyebrow gold">La vida del club</div>
+        <h2 id="media-nosotros-title">Un grupo en la cancha</h2>
+        <figure class="court-group glass">
+          <picture><source type="image/webp" srcset="assets/cancha/IMG_0762-640.webp 640w, assets/cancha/IMG_0762-1200.webp 1200w, assets/cancha/IMG_0762-1920.webp 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px"><img src="assets/cancha/IMG_0762-1200.jpg" srcset="assets/cancha/IMG_0762-640.jpg 640w, assets/cancha/IMG_0762-1200.jpg 1200w, assets/cancha/IMG_0762-1920.jpg 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px" width="1920" height="1080" alt="Grupo de baloncesto en la cancha techada, con dos tableros y aros al fondo" loading="lazy" decoding="async"></picture>
+          <figcaption>Un grupo que aprende y crece en la cancha.</figcaption>
+        </figure>
+      </section>
+
       <div class="grid2 team-grid">
         <div class="team-card glass rv d1">
           <div class="team-photo top"><picture><source srcset="assets/uniforme.webp" type="image/webp"><img src="assets/uniforme.jpg" alt="El director técnico y el director de gestión de Black Gold en una premiación, con trofeos" loading="lazy" decoding="async"></picture></div>
@@ -1127,21 +1151,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       </div>
 
 
-      <section class="court-media" id="galeria-cancha" aria-labelledby="court-title">
-        <div class="eyebrow gold">La cancha en acción</div>
-        <h2 id="court-title">Así entrenamos</h2>
-        <div class="court-photos">
-          <figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0824-cancha-480.webp 480w, assets/cancha/IMG_0824-cancha-720.webp 720w, assets/cancha/IMG_0824-cancha-1080.webp 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px"><img src="assets/cancha/IMG_0824-cancha-720.jpg" srcset="assets/cancha/IMG_0824-cancha-480.jpg 480w, assets/cancha/IMG_0824-cancha-720.jpg 720w, assets/cancha/IMG_0824-cancha-1080.jpg 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px" width="1080" height="1920" alt="Vista de la cancha techada con varios aros de baloncesto y un grupo durante el entrenamiento" loading="lazy" decoding="async"></picture><figcaption>La cancha y sus aros.</figcaption></figure>
-          <figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0778-minibasket-480.webp 480w, assets/cancha/IMG_0778-minibasket-720.webp 720w, assets/cancha/IMG_0778-minibasket-1080.webp 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px"><img src="assets/cancha/IMG_0778-minibasket-720.jpg" srcset="assets/cancha/IMG_0778-minibasket-480.jpg 480w, assets/cancha/IMG_0778-minibasket-720.jpg 720w, assets/cancha/IMG_0778-minibasket-1080.jpg 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px" width="1080" height="1920" alt="Aro pequeño negro junto a un tablero grande de baloncesto, durante un ejercicio de manejo de balón" loading="lazy" decoding="async"></picture><figcaption>Aro pequeño para minibasket.</figcaption></figure>
-        </div>
-        <figure class="court-group glass">
-          <picture><source type="image/webp" srcset="assets/cancha/IMG_0762-640.webp 640w, assets/cancha/IMG_0762-1200.webp 1200w, assets/cancha/IMG_0762-1920.webp 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px"><img src="assets/cancha/IMG_0762-1200.jpg" srcset="assets/cancha/IMG_0762-640.jpg 640w, assets/cancha/IMG_0762-1200.jpg 1200w, assets/cancha/IMG_0762-1920.jpg 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px" width="1920" height="1080" alt="Grupo de baloncesto en la cancha techada, con dos tableros y aros al fondo" loading="lazy" decoding="async"></picture>
-          <figcaption>Un grupo que aprende y crece en la cancha.</figcaption>
-        </figure>
-        <div class="court-clips">
-          <figure class="court-clip glass"><video controls playsinline preload="none" poster="assets/cancha/IMG_0778-poster.jpg" aria-label="Ejercicio de manejo de balón con aros en el piso"><source src="assets/cancha/IMG_0778-854.mp4" type="video/mp4" media="(max-width:640px)"><source src="assets/cancha/IMG_0778-1280.mp4" type="video/mp4">Tu navegador no puede reproducir este video. <a href="assets/cancha/IMG_0778-854.mp4">Abrir el video</a>.</video><figcaption>Manejo de balón y coordinación con aros.</figcaption></figure>
-          <figure class="court-clip glass"><video controls playsinline preload="none" poster="assets/cancha/IMG_0818-poster.jpg" aria-label="Ejercicio de baloncesto con conos y tablero al fondo"><source src="assets/cancha/IMG_0818-854.mp4" type="video/mp4" media="(max-width:640px)"><source src="assets/cancha/IMG_0818-1280.mp4" type="video/mp4">Tu navegador no puede reproducir este video. <a href="assets/cancha/IMG_0818-854.mp4">Abrir el video</a>.</video><figcaption>Práctica de baloncesto en la cancha techada.</figcaption></figure>
-        </div>
+      <section class="court-media" id="galeria-cancha" aria-labelledby="galeria-cancha-title">
+        <div class="eyebrow gold">La cancha techada</div>
+        <h2 id="galeria-cancha-title">La cancha y sus aros</h2>
+        <div class="court-single"><figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0824-cancha-480.webp 480w, assets/cancha/IMG_0824-cancha-720.webp 720w, assets/cancha/IMG_0824-cancha-1080.webp 1080w" sizes="(max-width:580px) calc(100vw - 40px), 540px"><img src="assets/cancha/IMG_0824-cancha-720.jpg" srcset="assets/cancha/IMG_0824-cancha-480.jpg 480w, assets/cancha/IMG_0824-cancha-720.jpg 720w, assets/cancha/IMG_0824-cancha-1080.jpg 1080w" sizes="(max-width:580px) calc(100vw - 40px), 540px" width="1080" height="1920" alt="Vista de la cancha techada con varios aros de baloncesto y un grupo durante el entrenamiento" loading="lazy" decoding="async"></picture><figcaption>La cancha y sus aros.</figcaption></figure></div>
       </section>
 
       <div class="plata-photo glass rv d3">
@@ -1276,7 +1289,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     var prev = activeView ? viewEls[activeView] : null;
     var next = viewEls[name];
     if(!next) return;
-    if(prev){ prev.classList.remove('active','entering'); } else { VIEWS.forEach(function(v){ if(v!==name && viewEls[v]) viewEls[v].classList.remove('active','entering'); }); }
+    if(prev){
+      prev.querySelectorAll('video').forEach(function(video){ video.pause(); });
+      prev.classList.remove('active','entering');
+    } else { VIEWS.forEach(function(v){ if(v!==name && viewEls[v]) viewEls[v].classList.remove('active','entering'); }); }
     next.classList.add('active');
     next.classList.remove('entering');
     void next.offsetWidth;
