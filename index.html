@@ -273,22 +273,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .matricula .amt{font-family:var(--f-body);font-weight:900;font-size:40px;color:var(--gold-500);letter-spacing:-.02em}
 .matricula p{color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
 
-/* ---------- oferta de apertura ---------- */
+/* ---------- inscripción ---------- */
 .launch-offer{position:relative;overflow:hidden;padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.28)}
 .launch-offer:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold-700),var(--gold-400),var(--gold-700))}
-.launch-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:24px;border:1px solid var(--line)}
-.launch-step{min-width:0;padding:22px;border-right:1px solid var(--line)}
-.launch-step:last-child{border-right:0}
-.launch-date{display:block;min-height:38px;color:var(--gold-400);font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
-.launch-price{display:block;margin:14px 0 12px;color:var(--fg);font-family:var(--f-display);font-size:clamp(34px,5vw,58px);font-weight:850;line-height:1}
-.launch-step p,.launch-note{color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
-.launch-note{margin-top:20px;padding-left:16px;border-left:3px solid var(--success)}
-.launch-details{margin-top:20px;border-top:1px solid var(--line)}
-.launch-details summary{padding:14px 0;cursor:pointer;color:var(--fg);font-weight:700;min-height:44px}
-.launch-details summary:focus-visible{outline:2px solid var(--gold-400);outline-offset:4px}
-.launch-details p{margin:0 0 12px;color:var(--fg-secondary);font-size:13.5px;line-height:1.65}
 .launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-@media(max-width:560px){.launch-grid{grid-template-columns:1fr}.launch-step,.launch-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.launch-step:last-child{border-bottom:0}.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
+@media(max-width:560px){.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
 
 /* ---------- beneficio familiar ---------- */
 .family-benefit{padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.4);background:linear-gradient(120deg,rgba(255,215,0,.08),transparent 70%),var(--surface-base)}
@@ -621,25 +610,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     </div>
   </section>
 
-  <section class="sec" id="oferta-apertura">
+  <section class="sec" id="inscripcion">
     <div class="wrap">
       <div class="launch-offer glass rv">
-        <div class="eyebrow gold">Oferta de apertura · septiembre de 2026</div>
-        <h2 style="margin-top:10px">Matrícula + uniforme por <span class="grad-gold">$40</span></h2>
-        <p class="lead" style="margin-top:14px;max-width:62ch">Para grupos juveniles y Clase Ejecutiva. Matricúlate y paga del <b style="color:var(--fg)">1 al 30 de septiembre de 2026</b>.</p>
-        <div class="launch-grid" aria-label="Mensualidades de la oferta de septiembre">
-          <div class="launch-step"><span class="launch-date">Hasta el 10 de octubre de 2026</span><strong class="launch-price">$0</strong><p>Entrena sin mensualidad hasta esa fecha, sin importar cuándo te matricules.</p></div>
-          <div class="launch-step"><span class="launch-date">Desde el 10 de octubre de 2026</span><strong class="launch-price">$20/mes</strong><p>Hasta agosto de 2027. Después, $25/mes.</p></div>
-        </div>
-        <details class="launch-details">
-          <summary>Ver condiciones de la promoción</summary>
-          <p><b>Fechas:</b> el período sin mensualidad va del 15 de septiembre al 10 de octubre de 2026; no son 30 días desde tu matrícula. El primer período de pago empieza el 10 de octubre, con corte el día 10 de cada mes. Desde septiembre de 2027, la mensualidad regular es de $25.</p>
-          <p><b>Uniforme:</b> incluye uno de entrenamiento del color elegido. Confirma talla, disponibilidad y entrega al matricularte. Las prendas de presentación son extras.</p>
-          <p><b>Descuento familiar:</b> 20% sobre el total de las mensualidades de dos o más familiares activos; no aplica a matrículas. Se valida con el equipo.</p>
-        </details>
+        <div class="eyebrow gold">Inscripciones abiertas</div>
+        <h2 style="margin-top:10px">Hazte parte de <span class="grad-gold">Black Gold</span></h2>
+        <p class="lead" style="margin-top:14px;max-width:62ch">Inscripciones para grupos juveniles y Clase Ejecutiva. En los planes de Desarrollo, la matrícula única es de <b style="color:var(--fg)">$40</b> e incluye uniforme de entrenamiento; el plan Formativo cuesta <b style="color:var(--fg)">$25/mes</b>. La Clase Ejecutiva tiene una mensualidad regular de <b style="color:var(--fg)">$25</b>. Consulta su matrícula y los cupos disponibles antes de inscribirte.</p>
         <div class="launch-actions">
           <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Registrarme</a>
-          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #OfertaApertura">Consultar por WhatsApp</a>
+          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #Inscripcion">Consultar por WhatsApp</a>
         </div>
       </div>
     </div>
@@ -661,7 +640,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow rv">El uniforme</div>
       <h2 class="rv d1">Se viste<br><span class="grad-gold">de club</span></h2>
-      <p class="lead rv d2" style="margin-top:14px">La oferta de septiembre incluye un uniforme de entrenamiento con el escudo del club. Elige el color y confirma talla, disponibilidad y fecha de entrega al inscribirte. Las prendas de presentación son extras.</p>
+      <p class="lead rv d2" style="margin-top:14px">La matrícula de los planes de Desarrollo incluye un uniforme de entrenamiento con el escudo del club. Elige el color y confirma talla, disponibilidad y fecha de entrega al inscribirte. Las prendas de presentación son extras.</p>
       <div class="gallery">
         <div class="frame glass uniforme rv d1">
           <picture><source srcset="assets/uniforme.webp" type="image/webp"><img class="foto-real" src="assets/uniforme.jpg" alt="Mockup oficial del uniforme de Black Gold" loading="lazy" decoding="async"></picture>
@@ -995,8 +974,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
           <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Tarifa regular · Cupos limitados.</p>
-          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Matrícula + uniforme de entrenamiento: $40 al matricularte y pagar del 1 al 30 de septiembre de 2026. Sin mensualidad del 15 de septiembre al 10 de octubre; la fecha final no cambia según tu matrícula. Desde el 10 de octubre: $20/mes hasta agosto de 2027, con corte el día 10. Desde septiembre de 2027: $25/mes.</p>
-          <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y la oferta de apertura. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
+          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Consulta la matrícula y los cupos disponibles para inscribirte.</p>
+          <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y quiero consultar los cupos y condiciones de inscripción. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
         </div>
       </div>
 
