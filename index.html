@@ -184,7 +184,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 /* ---------- hero (#inicio) ---------- */
 .hero{position:relative;min-height:88svh;display:flex;align-items:center;padding:118px 0 70px;overflow:hidden}
 .hero-wrap{max-width:1180px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;width:100%;position:relative;z-index:2}
-@media(max-width:860px){.hero-wrap{grid-template-columns:1fr;gap:20px}.hero{min-height:100svh;padding:104px 0 76px}}
+@media(max-width:860px){.hero-wrap{grid-template-columns:1fr;gap:20px}.hero{min-height:100svh;padding:104px 0 90px}}
 .wordmark{font-weight:900;line-height:.86;font-size:clamp(50px,13vw,132px);letter-spacing:.01em}
 .wordmark span{display:block}
 .wordmark .g{color:var(--gold-500)}
@@ -200,14 +200,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 .app-login-link::after{content:"→";color:var(--mental-soft);transition:transform .15s var(--ease-premium)}
 .app-login-link:hover{color:var(--fg)}
 .app-login-link:hover::after{transform:translateX(3px)}
-.hero .app-login-link{width:min(100%,380px);min-height:72px;justify-content:space-between;padding:12px 18px;border:1px solid rgb(192 132 252/.5);border-radius:var(--radius-control);background:linear-gradient(110deg,rgb(168 85 247/.15),rgb(168 85 247/.04));box-shadow:0 8px 28px rgb(0 0 0/.28);transition:background .2s,border-color .2s,transform .2s}
-.hero .app-login-link:hover{background:rgb(168 85 247/.2);border-color:var(--mental-soft);transform:translateY(-2px)}
-.hero .app-login-link .login-copy{display:flex;flex-direction:column;gap:2px;color:var(--fg-secondary);font-size:13px;font-weight:600}
-.hero .app-login-link .login-copy strong{color:var(--fg);font-size:clamp(20px,2.4vw,24px);font-weight:800;line-height:1.15}
-.hero .app-login-link::after{font-size:27px;font-weight:600;line-height:1}
+.hero .app-login-link{min-height:44px;max-width:100%;font-size:15px;line-height:1.5}
+.hero .app-login-link .login-copy{color:var(--fg-secondary);font-size:inherit;font-weight:400}
+.hero .app-login-link .login-copy strong{color:var(--fg);font-size:inherit;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.hero .app-login-link::after{content:none}
 .hero-jaguar img{width:100%;max-width:360px;margin-left:auto;filter:drop-shadow(0 24px 60px rgb(0 0 0/.85));transform:translate3d(0,var(--hero-offset,0px),0) scale(var(--hero-scale,1))}
 @media(max-width:860px){.hero-jaguar{max-width:200px;margin:0 auto;opacity:.92}.hero-jaguar img{max-width:200px}}
-@media(max-width:560px){.hero-access,.hero-cta{width:100%;min-width:0}.hero-access .btn-primary,.hero .app-login-link{width:100%}.hero-cta .btn{width:100%;max-width:100%;padding-left:14px;padding-right:14px}.app-entry-cta .btn{width:100%;max-width:360px}}
+@media(max-width:560px){.hero-access,.hero-cta{width:100%;min-width:0}.hero-access .btn-primary{width:100%}.hero-cta .btn{width:100%;max-width:100%;padding-left:14px;padding-right:14px}.app-entry-cta .btn{width:100%;max-width:360px}}
 .zarpazo-bg{position:absolute;top:-8%;right:-6%;width:60%;max-width:620px;opacity:.11;pointer-events:none;user-select:none;z-index:0;will-change:transform}
 @media(max-width:860px){.zarpazo-bg{width:92%;top:-4%;right:-24%}}
 .scrollcue{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font:800 11px/1.2 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--fg-secondary);display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2;border:0;background:none;cursor:pointer;white-space:nowrap;padding:6px 12px}
@@ -287,8 +286,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 /* ---------- inscripción ---------- */
 .launch-offer{position:relative;overflow:hidden;padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.28)}
 .launch-offer:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold-700),var(--gold-400),var(--gold-700))}
-.launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-@media(max-width:560px){.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
 
 /* ---------- beneficio familiar ---------- */
 .family-benefit{padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.4);background:linear-gradient(120deg,rgba(255,215,0,.08),transparent 70%),var(--surface-base)}
@@ -604,7 +601,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <p class="hero-sub hero-anim d2">Baloncesto y entrenamiento para crecer a tu ritmo. Un plan claro y progreso que puedes ver.</p>
         <div class="hero-access hero-anim d4">
           <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Inscribirme</a>
-          <a class="app-login-link" href="https://app.blackgoldec.com/login"><span class="login-copy">¿Ya tienes cuenta?<strong>Iniciar sesión</strong></span></a>
+          <a class="app-login-link" href="https://app.blackgoldec.com/login"><span class="login-copy">¿Ya tienes cuenta? <strong>Iniciar sesión</strong></span></a>
         </div>
       </div>
       <div class="hero-jaguar hero-anim d2"><img src="assets/escudo-jaguar.png" alt="Escudo de Black Gold: jaguar dorado — Baloncesto · Sucumbíos" decoding="async" fetchpriority="high"></div>
@@ -632,10 +629,6 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <div class="eyebrow gold">Inscripciones abiertas</div>
         <h2 style="margin-top:10px">Hazte parte de <span class="grad-gold">Black Gold</span></h2>
         <p class="lead" style="margin-top:14px;max-width:62ch">Matrícula única de <b style="color:var(--fg)">$45</b> en todos los programas. Elige tu plan y consulta los cupos disponibles.</p>
-        <div class="launch-actions">
-          <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Registrarme</a>
-          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #Inscripcion">Consultar por WhatsApp</a>
-        </div>
       </div>
     </div>
   </section>
