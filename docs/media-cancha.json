@@ -1,0 +1,359 @@
+{
+  "selection_date": "2026-10-11",
+  "folder_url": "https://drive.google.com/drive/folders/1g_6FBAWQneJZcocbkqpcQRnBXzChiCgU",
+  "placement": "Hamburger menu: Nosotros / Desarrollo / Metodo / Instalaciones",
+  "originals_preserved": true,
+  "full_frame_preserved": true,
+  "generation_used": false,
+  "poster_selection": {
+    "frames_reviewed": 59,
+    "IMG_0778": "5.60 s: three training hoops in the foreground, two backboards and visible faces.",
+    "IMG_0818": "4.70 s: the full backboard, visible faces and a front view of the drill.",
+    "group_photo": "The group photo has the clearest visible smiles."
+  },
+  "files": [
+    {
+      "id": "1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT",
+      "title": "IMG_0778.MOV",
+      "url": "https://drive.google.com/file/d/1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT/view?usp=drivesdk",
+      "mime_type": "video/quicktime",
+      "size": "28003609",
+      "created_time": "2026-10-11T17:19:43.804Z",
+      "sha256": "ef765b832dbf0dd4d3fac9180e18bdfa1085208e46b74da24628bb0c29e3fa09",
+      "original": {
+        "codec": "hevc",
+        "image_size": null,
+        "encoded_size": [
+          1920,
+          1080
+        ],
+        "duration": "18.478333",
+        "rotation": -90
+      },
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0778-854.mp4",
+          "bytes": 2910879,
+          "width": 480,
+          "height": 854,
+          "duration": 18.476667,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "b1ab317e84b5ce86510928191f5109ad011f2585d49573242ec267a67650053b"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-1280.mp4",
+          "bytes": 5188168,
+          "width": 720,
+          "height": 1280,
+          "duration": 18.476667,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "0b3933d78d8271fc072b5d248e7d37dff00dae85bed630bce2b4c4e05e3a507f"
+        }
+      ],
+      "poster": {
+        "path": "assets/cancha/IMG_0778-poster.jpg",
+        "source_time_seconds": 5.6,
+        "width": 480,
+        "height": 854,
+        "bytes": 78176,
+        "sha256": "56b6aa18edaaa39ac8f6ac20a699e29b2b9c25ff38b6f04b52dca66e56d177dd"
+      },
+      "placement": "Metodo"
+    },
+    {
+      "id": "11iUweoUhAPnwF3ZiOyaL7FiIxIICts90",
+      "title": "IMG_0818.MOV",
+      "url": "https://drive.google.com/file/d/11iUweoUhAPnwF3ZiOyaL7FiIxIICts90/view?usp=drivesdk",
+      "mime_type": "video/quicktime",
+      "size": "17070150",
+      "created_time": "2026-10-11T17:19:39.661Z",
+      "sha256": "30c7008344b2b3abb1f65bb3936374aefb59e6ac90bc9402d67fc84b55800fe8",
+      "original": {
+        "codec": "hevc",
+        "image_size": null,
+        "encoded_size": [
+          1920,
+          1080
+        ],
+        "duration": "11.240000",
+        "rotation": -90
+      },
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0818-854.mp4",
+          "bytes": 1881858,
+          "width": 480,
+          "height": 854,
+          "duration": 11.238333,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "7c1e19794be40a6819f7eeec80062ec542cda44cc68a2e186f9415dfb8002a5c"
+        },
+        {
+          "path": "assets/cancha/IMG_0818-1280.mp4",
+          "bytes": 3300158,
+          "width": 720,
+          "height": 1280,
+          "duration": 11.238333,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "pix_fmt": "yuv420p",
+          "faststart": true,
+          "sha256": "ebe735c95ea69beba657511b5a85e9ac1927eb8efd72ea896f365b37d5c7f4ef"
+        }
+      ],
+      "poster": {
+        "path": "assets/cancha/IMG_0818-poster.jpg",
+        "source_time_seconds": 4.7,
+        "width": 480,
+        "height": 854,
+        "bytes": 82676,
+        "sha256": "930ac3aa5f7c87e49afb83c419c14a5c325ca978d1740f6b7be9b26f231ef398"
+      },
+      "placement": "Desarrollo"
+    },
+    {
+      "id": "1SzwzWkldKO8WTh_57x2dfPQlutIC6bEc",
+      "title": "IMG_0762.HEIC",
+      "url": "https://drive.google.com/file/d/1SzwzWkldKO8WTh_57x2dfPQlutIC6bEc/view?usp=drivesdk",
+      "mime_type": "image/heif",
+      "size": "1319237",
+      "created_time": "2026-10-11T17:19:32.154Z",
+      "sha256": "40779f48da0b832fc0977541436d717281bceba1f1768d46bc7f69de0c1f8e67",
+      "original": {
+        "codec": "hevc",
+        "image_size": [
+          4032,
+          2268
+        ],
+        "encoded_size": [
+          512,
+          512
+        ],
+        "duration": null,
+        "rotation": 0
+      },
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0762-640.webp",
+          "bytes": 46388,
+          "width": 640,
+          "height": 360,
+          "format": "webp",
+          "sha256": "cecb1f7b258182a4d11523db7adb5eaf5386f990630f7354b228b32ac50523cd"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-640.jpg",
+          "bytes": 63335,
+          "width": 640,
+          "height": 360,
+          "format": "jpg",
+          "sha256": "59fecb5a8393360aa379aeebd249df4795c03883e4e9d33470ed71b6db976e86"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1200.webp",
+          "bytes": 122786,
+          "width": 1200,
+          "height": 675,
+          "format": "webp",
+          "sha256": "7dff985282be99180dff2c47aa69a2baa59aad6ebe70f3625f4ad785ad081988"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1200.jpg",
+          "bytes": 183938,
+          "width": 1200,
+          "height": 675,
+          "format": "jpg",
+          "sha256": "7bb21cae347f98c9b3d35334553fb347c9d4a337214de0391289d33e08de61e7"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1920.webp",
+          "bytes": 239704,
+          "width": 1920,
+          "height": 1080,
+          "format": "webp",
+          "sha256": "642a3def6c67f5db6530a33878ffbf1584e682f41acf0e486960b77e8dcc02b7"
+        },
+        {
+          "path": "assets/cancha/IMG_0762-1920.jpg",
+          "bytes": 395998,
+          "width": 1920,
+          "height": 1080,
+          "format": "jpg",
+          "sha256": "1765ff1c24be6dc675892eaaa5fd58945a0e4908c10a895cb5f8e91a2751c050"
+        }
+      ],
+      "placement": "Nosotros"
+    }
+  ],
+  "derived_photos": [
+    {
+      "source_title": "IMG_0824.MOV",
+      "source_id": "1bQMc-2czMfWXIlatIa13whM4n9_4_4Zb",
+      "source_url": "https://drive.google.com/file/d/1bQMc-2czMfWXIlatIa13whM4n9_4_4Zb/view?usp=drivesdk",
+      "source_sha256": "7553447208556eeac85b0e43c881ed9a0de35ac7958d74d01d8ea2f7b369d2d7",
+      "timestamp_seconds": 0.2,
+      "caption": "La cancha y sus aros.",
+      "full_frame_preserved": true,
+      "generation_used": false,
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0824-cancha-480.webp",
+          "bytes": 50214,
+          "width": 480,
+          "height": 853,
+          "format": "webp",
+          "sha256": "514e0c48aeb4b07dcaf75727e3320717f4fc623cecfc9422dda2a529cc657961"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-480.jpg",
+          "bytes": 78910,
+          "width": 480,
+          "height": 853,
+          "format": "jpg",
+          "sha256": "90f73ae40d26a306b0b8bb6c5879d80d457bf29a45b530b243428296fa55ba4b"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-720.webp",
+          "bytes": 85448,
+          "width": 720,
+          "height": 1280,
+          "format": "webp",
+          "sha256": "6b99c56c4b06048f07e96e77384d96ce8972a8f95be1026eb68f96e575b98eb7"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-720.jpg",
+          "bytes": 145779,
+          "width": 720,
+          "height": 1280,
+          "format": "jpg",
+          "sha256": "68a3867dfbf8c6ea3cca363816a631939b6fe1f814bf72e335c0ceaee7861bf8"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-1080.webp",
+          "bytes": 137198,
+          "width": 1080,
+          "height": 1920,
+          "format": "webp",
+          "sha256": "ccc52ff499b04192652cd7d21e26db56223c25ec94984766075450befe2e3f52"
+        },
+        {
+          "path": "assets/cancha/IMG_0824-cancha-1080.jpg",
+          "bytes": 258915,
+          "width": 1080,
+          "height": 1920,
+          "format": "jpg",
+          "sha256": "331156dccefecb4164ee1a93c1be12c3f439599efe9673e854682ce840ff0f32"
+        }
+      ],
+      "placement": "Instalaciones"
+    },
+    {
+      "source_title": "IMG_0778.MOV",
+      "source_id": "1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT",
+      "source_url": "https://drive.google.com/file/d/1rN3QwxS5FgW9bU7MJwFyKPDMEAUIk3gT/view?usp=drivesdk",
+      "source_sha256": "ef765b832dbf0dd4d3fac9180e18bdfa1085208e46b74da24628bb0c29e3fa09",
+      "timestamp_seconds": 5.2,
+      "caption": "Aro pequeño para minibasket.",
+      "full_frame_preserved": true,
+      "generation_used": false,
+      "versions": [
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-480.webp",
+          "bytes": 46382,
+          "width": 480,
+          "height": 853,
+          "format": "webp",
+          "sha256": "fbdb451e944ce069d4929a022e91f8b6a46c1828d0eb3261829fa2aab5a47be3"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-480.jpg",
+          "bytes": 74013,
+          "width": 480,
+          "height": 853,
+          "format": "jpg",
+          "sha256": "c1d6f38baeccd6994c6b62a18f0e8a9c40f10284f27b547935f3cf6eba7f598e"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-720.webp",
+          "bytes": 75124,
+          "width": 720,
+          "height": 1280,
+          "format": "webp",
+          "sha256": "c3cba63f415819012534016d90c7c4e4aa9d1205a9298856d331dd9bc7078cf3"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-720.jpg",
+          "bytes": 135259,
+          "width": 720,
+          "height": 1280,
+          "format": "jpg",
+          "sha256": "8c9cdfe1ed88848dbd2c36ee4f193c71d1c88260fcbee34e8578e5a15329acf8"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-1080.webp",
+          "bytes": 117564,
+          "width": 1080,
+          "height": 1920,
+          "format": "webp",
+          "sha256": "d222008f285fef34b768b74e5dc0dd95aa143480a9a2828aba109912d8882aa4"
+        },
+        {
+          "path": "assets/cancha/IMG_0778-minibasket-1080.jpg",
+          "bytes": 235567,
+          "width": 1080,
+          "height": 1920,
+          "format": "jpg",
+          "sha256": "48f043b8cb5f6349d6ee2767c5764b9058d02e8cb10c142267254195c980cf8c"
+        }
+      ],
+      "placement": "Desarrollo"
+    }
+  ],
+  "derived_photo_selection": "Owner-selected court overview at IMG_0824 0.20 s and an additional small-basket view at IMG_0778 5.20 s. These frames do not establish seven baskets, regulation heights, or the location of every small basket.",
+  "placements": [
+    {
+      "view": "nosotros",
+      "menu_label": "Nosotros",
+      "section_id": "media-nosotros",
+      "media": [
+        "IMG_0762 group photo"
+      ]
+    },
+    {
+      "view": "planes",
+      "menu_label": "Desarrollo",
+      "section_id": "media-desarrollo",
+      "media": [
+        "IMG_0778 minibasket still at 5.20 s",
+        "IMG_0818 video"
+      ]
+    },
+    {
+      "view": "metodo",
+      "menu_label": "Metodo",
+      "section_id": "media-metodo",
+      "media": [
+        "IMG_0778 video"
+      ]
+    },
+    {
+      "view": "instalaciones",
+      "menu_label": "Instalaciones",
+      "section_id": "galeria-cancha",
+      "media": [
+        "IMG_0824 court overview still at 0.20 s"
+      ]
+    }
+  ],
+  "home_media_added": false,
+  "video_navigation": "Pause video playback when leaving its view; keep controls, playsinline, preload=none and no autoplay."
+}

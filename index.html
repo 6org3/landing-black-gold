@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#09090B">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <meta property="og:title" content="Black Gold — Club formativo de baloncesto · Nueva Loja">
-<meta property="og:description" content="Evaluación de entrada, grupos por nivel real y seguimiento desde la app. Planes desde $25. Reacondicionamiento para personas adultas en las mañanas.">
+<meta property="og:description" content="Evaluación de entrada, grupos por nivel real y seguimiento desde la app. Planes desde $25. Reacondicionamiento para personas adultas por la mañana y por la noche.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_EC">
 <meta name="twitter:card" content="summary">
@@ -134,6 +134,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
   html{scroll-behavior:auto!important}
   .rv,.hero-anim{opacity:1!important;transform:none!important;transition:none!important}
   .zarpazo-bg{transform:none!important}
+  .hero-jaguar img{transform:none!important}
   .marq-in{animation:none!important}
   .marq{overflow-x:auto!important}
   .scrollcue span{animation:none!important;opacity:1!important;transform:none!important}
@@ -181,31 +182,40 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 @media(max-width:700px){.sec{padding:44px 0}}
 
 /* ---------- hero (#inicio) ---------- */
-.hero{position:relative;min-height:82svh;display:flex;align-items:center;padding:118px 0 46px;overflow:hidden}
+.hero{position:relative;min-height:88svh;display:flex;align-items:center;padding:118px 0 70px;overflow:hidden}
 .hero-wrap{max-width:1180px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;width:100%;position:relative;z-index:2}
-@media(max-width:860px){.hero-wrap{grid-template-columns:1fr}.hero{min-height:auto;padding:104px 0 36px}}
+@media(max-width:860px){.hero-wrap{grid-template-columns:1fr;gap:20px}.hero{min-height:100svh;padding:104px 0 90px}}
 .wordmark{font-weight:900;line-height:.86;font-size:clamp(50px,13vw,132px);letter-spacing:.01em}
 .wordmark span{display:block}
 .wordmark .g{color:var(--gold-500)}
-.hero-sub{margin:16px 0 4px;font-size:clamp(15px,1.8vw,18px);color:var(--fg);font-weight:300;max-width:38ch}
+.hero-sub{margin:20px 0 0;font-size:clamp(17px,2vw,21px);color:var(--fg);font-weight:300;max-width:34ch;line-height:1.45}
 .hero .chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}
 .hero .chip::before{content:"";width:5px;height:5px;border-radius:999px;background:currentColor;box-shadow:0 0 9px currentColor;opacity:.85;flex:none}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero-access{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0}
+.hero-access{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;margin-top:26px}
+.hero-access .btn-primary{min-height:54px;padding:0 28px;font-size:15px;letter-spacing:.12em}
 .app-entry-cta{display:flex;flex-direction:column;align-items:center;gap:12px}
 .app-login-link{display:inline-flex;align-items:center;gap:7px;color:var(--fg-secondary);font-size:13px;font-weight:600;letter-spacing:.02em;text-decoration:none;transition:color .15s var(--ease-premium)}
 .app-login-link span{color:var(--mental-soft);font-weight:800}
 .app-login-link::after{content:"→";color:var(--mental-soft);transition:transform .15s var(--ease-premium)}
 .app-login-link:hover{color:var(--fg)}
 .app-login-link:hover::after{transform:translateX(3px)}
-.hero-jaguar img{width:100%;max-width:360px;margin-left:auto;filter:drop-shadow(0 24px 60px rgb(0 0 0/.85))}
-@media(max-width:860px){.hero-jaguar{max-width:210px;margin:6px auto 0;opacity:.92}.hero-jaguar img{max-width:210px}}
-@media(max-width:560px){.hero-access,.hero-cta{width:100%;min-width:0}.hero-cta .btn{width:100%;max-width:100%;padding-left:14px;padding-right:14px}.app-entry-cta .btn{width:100%;max-width:360px}}
+.hero .app-login-link{min-height:44px;max-width:100%;font-size:15px;line-height:1.5}
+.hero .app-login-link .login-copy{color:var(--fg-secondary);font-size:inherit;font-weight:400}
+.hero .app-login-link .login-copy strong{color:var(--fg);font-size:inherit;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.hero .app-login-link::after{content:none}
+.hero-jaguar img{width:100%;max-width:360px;margin-left:auto;filter:drop-shadow(0 24px 60px rgb(0 0 0/.85));transform:translate3d(0,var(--hero-offset,0px),0) scale(var(--hero-scale,1))}
+@media(max-width:860px){.hero-jaguar{max-width:200px;margin:0 auto;opacity:.92}.hero-jaguar img{max-width:200px}}
+@media(max-width:560px){.hero-access,.hero-cta{width:100%;min-width:0}.hero-access .btn-primary{width:100%}.hero-cta .btn{width:100%;max-width:100%;padding-left:14px;padding-right:14px}.app-entry-cta .btn{width:100%;max-width:360px}}
 .zarpazo-bg{position:absolute;top:-8%;right:-6%;width:60%;max-width:620px;opacity:.11;pointer-events:none;user-select:none;z-index:0;will-change:transform}
 @media(max-width:860px){.zarpazo-bg{width:92%;top:-4%;right:-24%}}
-.scrollcue{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-secondary);display:flex;flex-direction:column;align-items:center;gap:8px;z-index:2}
+.scrollcue{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font:800 11px/1.2 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--fg-secondary);display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2;border:0;background:none;cursor:pointer;white-space:nowrap;padding:6px 12px}
+.scrollcue:hover{color:var(--gold-500)}
 .scrollcue span{display:block;width:1px;height:28px;background:linear-gradient(var(--gold-700),transparent);animation:cue 2s ease-in-out infinite}
 @keyframes cue{0%,100%{opacity:.25;transform:scaleY(.5)}50%{opacity:1;transform:scaleY(1)}}
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--gold-500);transform:scaleX(0);transform-origin:left;z-index:250;pointer-events:none;opacity:0}
+.scroll-progress.is-visible{opacity:1}
+#la-promesa{scroll-margin-top:82px}
 
 .hero-anim{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease-premium),transform .6s var(--ease-premium)}
 .hero-anim.in{opacity:1;transform:none}
@@ -276,8 +286,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-500);outline-o
 /* ---------- inscripción ---------- */
 .launch-offer{position:relative;overflow:hidden;padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.28)}
 .launch-offer:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold-700),var(--gold-400),var(--gold-700))}
-.launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-@media(max-width:560px){.launch-actions .btn{width:100%;justify-content:center;padding:12px 16px;text-align:center}}
 
 /* ---------- beneficio familiar ---------- */
 .family-benefit{padding:clamp(26px,5vw,52px);border-color:rgba(255,215,0,.4);background:linear-gradient(120deg,rgba(255,215,0,.08),transparent 70%),var(--surface-base)}
@@ -501,9 +509,19 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
   h3,.subhead{font-size:clamp(20.5px,5.4vw,23px)}
   .btn{font-size:15px;letter-spacing:.12em;white-space:normal;line-height:1.3}
 }
+
+.court-media{margin:34px 0}.court-media h2{margin-bottom:18px}
+.court-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.court-single{max-width:540px;margin:0 auto}
+.court-photo{margin:0;overflow:hidden}.court-photo picture{display:block;width:100%;max-width:540px;margin:auto}.court-pair .court-photo picture{max-width:360px}.court-photo img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain}
+.court-group{margin:0;overflow:hidden}.court-group img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.court-media figcaption{padding:16px 20px;color:var(--fg-secondary);font-size:16px;line-height:1.5}
+.court-clip{margin:0;overflow:hidden;display:flex;flex-direction:column;align-items:center}.court-clip video{display:block;width:100%;max-width:360px;height:auto;aspect-ratio:9/16;object-fit:contain;background:#000}.court-clip figcaption{align-self:stretch}
+@media(max-width:640px){.court-pair{grid-template-columns:1fr}.court-media figcaption{font-size:17px}}
+
 </style>
 </head>
 <body>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 <svg class="svg-defs" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
@@ -549,9 +567,9 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <a href="#nosotros" class="m-link" data-view-link="nosotros"><span class="m-num">02</span>Nosotros<span class="m-sub">Un equipo de entrenadores, un sistema</span></a>
       <a href="#metodo" class="m-link" data-view-link="metodo"><span class="m-num">03</span>Método<span class="m-sub">Biomecánica y niveles reales</span></a>
       <a href="#app" class="m-link" data-view-link="app"><span class="m-num">04</span>La App<span class="m-sub">Todo el club, en el bolsillo</span></a>
-      <a href="#horarios" class="m-link" data-view-link="horarios"><span class="m-num">05</span>Horarios<span class="m-sub">07:00 – 21:00 · lunes a viernes</span></a>
+      <a href="#horarios" class="m-link" data-view-link="horarios"><span class="m-num">05</span>Horarios<span class="m-sub">07:00 – 20:00 · lunes a viernes</span></a>
       <a href="#planes" class="m-link" data-view-link="planes"><span class="m-num">06</span>Desarrollo<span class="m-sub">Planes para niños y jóvenes</span></a>
-      <a href="#plata" class="m-link m-link-long" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Personas adultas · mañanas</span></a>
+      <a href="#plata" class="m-link m-link-long" data-view-link="plata"><span class="m-num">07</span>Reacondicionamiento<span class="m-sub">Personas adultas · mañana y noche</span></a>
       <a href="#instalaciones" class="m-link" data-view-link="instalaciones"><span class="m-num">08</span>Instalaciones<span class="m-sub">Cancha privada y del parque · fase inicial</span></a>
     </nav>
     <div class="menu-foot">
@@ -580,32 +598,27 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div>
         <div class="eyebrow gold hero-anim d1">Nueva Loja · Sucumbíos</div>
         <h1 class="wordmark hero-anim d1"><span>BLACK</span><span class="g">GOLD</span></h1>
-        <p class="hero-sub hero-anim d2">Club formativo de baloncesto y entrenamiento personalizado, para todas las edades. Aquí no se improvisa: se mide, se planifica y se crece.</p>
-        <div class="chips hero-anim d3">
-          <span class="chip gold">Rigor científico</span>
-          <span class="chip info">Biomecánica</span>
-          <span class="chip success">Desarrollo</span>
-          <span class="chip mental">Mentalidad</span>
-        </div>
+        <p class="hero-sub hero-anim d2">Baloncesto y entrenamiento para crecer a tu ritmo. Un plan claro y progreso que puedes ver.</p>
         <div class="hero-access hero-anim d4">
-          <a class="app-login-link" href="https://app.blackgoldec.com/login">¿Ya tienes cuenta? <span>Iniciar sesión</span></a>
+          <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Inscribirme</a>
+          <a class="app-login-link" href="https://app.blackgoldec.com/login"><span class="login-copy">¿Ya tienes cuenta? <strong>Iniciar sesión</strong></span></a>
         </div>
       </div>
       <div class="hero-jaguar hero-anim d2"><img src="assets/escudo-jaguar.png" alt="Escudo de Black Gold: jaguar dorado — Baloncesto · Sucumbíos" decoding="async" fetchpriority="high"></div>
     </div>
-    <div class="scrollcue"><span></span>Desliza</div>
+    <button class="scrollcue" id="scrollcue" type="button" aria-label="Explorar la página"><span aria-hidden="true"></span>Desliza para explorar</button>
   </section>
 
   <div class="marq"><div class="marq-in" id="marq"></div></div>
-  <section class="sec">
+  <section class="sec" id="la-promesa">
     <div class="wrap">
       <div class="eyebrow rv">La promesa</div>
       <h2 class="rv d1">El oro<br><span class="grad-gold">se forja</span></h2>
-      <p class="lead rv d2" style="margin-top:14px">Nueva Loja existe por el oro negro: tierra en bruto que se vuelve valor. Lo mismo hace un club formativo con un atleta: el jaguar no es adorno, es potencia, control y mirada.</p>
+      <p class="lead rv d2" style="margin-top:14px">Como el oro de nuestra tierra, el talento se trabaja. Medimos, entrenamos y acompañamos cada avance.</p>
       <div class="philo-values rv d3">
-        <div><b>Rigor científico</b><span>Se evalúa con datos, se planifica por atleta y se vuelve a medir para comprobar el progreso.</span></div>
-        <div><b>Biomecánica</b><span>El dato manda. Se mide al entrar y se vuelve a medir cada trimestre.</span></div>
-        <div><b>Desarrollo</b><span>Todas las edades: del semillero al alto rendimiento, y también quien vuelve a moverse.</span></div>
+        <div><b>Evaluación</b><span>Conocemos tu punto de partida.</span></div>
+        <div><b>Entrenamiento</b><span>Un plan según tu nivel.</span></div>
+        <div><b>Progreso</b><span>Medimos cómo avanzas.</span></div>
       </div>
     </div>
   </section>
@@ -615,11 +628,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="launch-offer glass rv">
         <div class="eyebrow gold">Inscripciones abiertas</div>
         <h2 style="margin-top:10px">Hazte parte de <span class="grad-gold">Black Gold</span></h2>
-        <p class="lead" style="margin-top:14px;max-width:62ch">Inscripciones para grupos juveniles y Clase Ejecutiva. En los planes de Desarrollo, la matrícula única es de <b style="color:var(--fg)">$40</b> e incluye uniforme de entrenamiento; el plan Formativo cuesta <b style="color:var(--fg)">$25/mes</b>. La Clase Ejecutiva tiene una mensualidad regular de <b style="color:var(--fg)">$25</b>. Consulta su matrícula y los cupos disponibles antes de inscribirte.</p>
-        <div class="launch-actions">
-          <a class="btn btn-primary" href="https://app.blackgoldec.com/registro">Registrarme</a>
-          <a class="btn btn-wa" data-wa="Quiero consultar las condiciones vigentes de inscripción, los cupos y las opciones de pago. #Inscripcion">Consultar por WhatsApp</a>
-        </div>
+        <p class="lead" style="margin-top:14px;max-width:62ch">Matrícula única de <b style="color:var(--fg)">$45</b> en todos los programas. Elige tu plan y consulta los cupos disponibles.</p>
       </div>
     </div>
   </section>
@@ -640,7 +649,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     <div class="wrap">
       <div class="eyebrow rv">El uniforme</div>
       <h2 class="rv d1">Se viste<br><span class="grad-gold">de club</span></h2>
-      <p class="lead rv d2" style="margin-top:14px">La matrícula de los planes de Desarrollo incluye un uniforme de entrenamiento con el escudo del club. Elige el color y confirma talla, disponibilidad y fecha de entrega al inscribirte. Las prendas de presentación son extras.</p>
+      <p class="lead rv d2" style="margin-top:14px">En Desarrollo, la matrícula incluye uniforme de entrenamiento. Confirma color, talla y entrega al inscribirte; las prendas de presentación se adquieren aparte.</p>
       <div class="gallery">
         <div class="frame glass uniforme rv d1">
           <picture><source srcset="assets/uniforme.webp" type="image/webp"><img class="foto-real" src="assets/uniforme.jpg" alt="Mockup oficial del uniforme de Black Gold" loading="lazy" decoding="async"></picture>
@@ -675,6 +684,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <h1 class="rv d1">Planes de<br><span class="grad-gold">Desarrollo</span></h1>
       <p class="lead rv d2" style="margin-top:14px">Todos los atletas entran al programa formativo y todos reciben la evaluación
         antropométrica de entrada. Lo que cambia entre planes es cuántos comparten la cancha con tu hijo.</p>
+
+      <section class="court-media" id="media-desarrollo" aria-labelledby="media-desarrollo-title">
+        <div class="eyebrow gold">Baloncesto en formación</div>
+        <h2 id="media-desarrollo-title">Así entrenamos</h2>
+        <div class="court-pair">
+          <figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0778-minibasket-480.webp 480w, assets/cancha/IMG_0778-minibasket-720.webp 720w, assets/cancha/IMG_0778-minibasket-1080.webp 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px"><img src="assets/cancha/IMG_0778-minibasket-720.jpg" srcset="assets/cancha/IMG_0778-minibasket-480.jpg 480w, assets/cancha/IMG_0778-minibasket-720.jpg 720w, assets/cancha/IMG_0778-minibasket-1080.jpg 1080w" sizes="(max-width:640px) calc(100vw - 40px), (max-width:1200px) calc((100vw - 62px) / 2), 539px" width="1080" height="1920" alt="Aro pequeño negro junto a un tablero grande de baloncesto, durante un ejercicio de manejo de balón" loading="lazy" decoding="async"></picture><figcaption>Aro pequeño para minibasket.</figcaption></figure>
+          <figure class="court-clip glass"><video controls playsinline preload="none" poster="assets/cancha/IMG_0818-poster.jpg" aria-label="Ejercicio de baloncesto con conos y tablero al fondo"><source src="assets/cancha/IMG_0818-854.mp4" type="video/mp4" media="(max-width:640px)"><source src="assets/cancha/IMG_0818-1280.mp4" type="video/mp4">Tu navegador no puede reproducir este video. <a href="assets/cancha/IMG_0818-854.mp4">Abrir el video</a>.</video><figcaption>Práctica de baloncesto en la cancha techada.</figcaption></figure>
+        </div>
+      </section>
 
       <div class="plans">
         <div class="plan glass rv d1">
@@ -725,10 +743,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="matricula glass rv">
         <div>
           <div class="tag-label">Matrícula única</div>
-          <div class="amt">$40</div>
+          <div class="amt">$45</div>
         </div>
         <div>
-          <p><b style="color:var(--fg);font-weight:600">Incluye un uniforme de entrenamiento</b> del color elegido, con camiseta deportiva y short del club. La fecha de entrega se confirma al inscribirse. El uniforme de presentación y las demás prendas de presentación se adquieren aparte.</p>
+          <p><b style="color:var(--fg);font-weight:600">Incluye camiseta y short de entrenamiento.</b> Confirma color, talla y entrega al inscribirte. Las prendas de presentación se adquieren aparte.</p>
           <div style="margin-top:14px"><a class="btn btn-wa btn-sm" data-wa="Tengo una pregunta sobre la matrícula y el uniforme. #Matricula">Preguntar por la matrícula</a></div>
         </div>
       </div>
@@ -751,7 +769,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
         <picture><source srcset="assets/reacondicionamiento.webp" type="image/webp"><img src="assets/reacondicionamiento.jpg" alt="Grupo de personas adultas del programa de la mañana, en el gimnasio techado" loading="lazy" decoding="async"></picture>
         <div class="lab">El grupo de la mañana · esto ya está pasando</div>
       </div>
-      <p class="lead rv d2" style="margin-top:14px">En las mañanas la cancha cambia de público: personas adultas de cualquier edad, en movilidad, fuerza, cardio y biomecánica. No es baloncesto: es recuperar capacidades y confiar de nuevo en tu cuerpo.</p>
+      <p class="lead rv d2" style="margin-top:14px">El programa de Reacondicionamiento trabaja movilidad, fuerza, cardio y biomecánica para personas adultas de cualquier edad. Recupera capacidades y confianza en tu cuerpo.</p>
+      <p class="lead rv d3" style="margin-top:12px">Turnos por la mañana: <b style="color:var(--fg)">07:00–08:00</b> y <b style="color:var(--fg)">08:00–09:00</b>. Por la noche: <b style="color:var(--fg)">18:00–19:00</b>. En los turnos de mañana también hay baloncesto.</p>
       <p class="lead rv d3" style="margin-top:12px">Los grupos se arman por <b style="color:var(--fg);font-weight:600">nivel de
         movilidad</b>, medido en una valoración de entrada. No por edad y no por sexo — porque a los 40 y a los
         70 hay gente que empieza en el mismo punto.</p>
@@ -808,7 +827,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="matricula glass rv">
         <div>
           <div class="tag-label">Matrícula única</div>
-          <div class="amt">$20</div>
+          <div class="amt">$45</div>
         </div>
         <div>
           <p><b style="color:var(--fg);font-weight:600">Incluye la camiseta técnica del club.</b> Se paga una vez al inscribirse,
@@ -828,6 +847,12 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="eyebrow gold rv">03 · Método</div>
       <h1 class="rv d1">Se mide.<br>Después se <span class="grad-gold">asigna</span>.</h1>
       <p class="lead rv d2" style="margin-top:14px">La mayoría agrupa por edad; nosotros, por lo que el atleta puede hacer hoy, medido con parámetros, no a ojo. La evaluación antropométrica es el primer paso, sin excepción.</p>
+
+      <section class="court-media" id="media-metodo" aria-labelledby="media-metodo-title">
+        <div class="eyebrow gold">El método en la cancha</div>
+        <h2 id="media-metodo-title">Manejo de balón y coordinación</h2>
+        <div class="court-single"><figure class="court-clip glass"><video controls playsinline preload="none" poster="assets/cancha/IMG_0778-poster.jpg" aria-label="Ejercicio de manejo de balón con aros en el piso"><source src="assets/cancha/IMG_0778-854.mp4" type="video/mp4" media="(max-width:640px)"><source src="assets/cancha/IMG_0778-1280.mp4" type="video/mp4">Tu navegador no puede reproducir este video. <a href="assets/cancha/IMG_0778-854.mp4">Abrir el video</a>.</video><figcaption>Manejo de balón y coordinación con aros.</figcaption></figure></div>
+      </section>
 
       <div class="grid3">
         <div class="lvl-card glass rv d1">
@@ -935,50 +960,64 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
   <section class="sec">
     <div class="wrap">
       <div class="eyebrow gold rv">05 · Horarios</div>
-      <h1 class="rv d1">Cuatro franjas.<br><span class="grad-gold">Una sola cancha</span>.</h1>
-      <p class="lead rv d2" style="margin-top:14px">La cancha no descansa. Cada franja tiene su público y su propósito.</p>
+      <h1 class="rv d1">Mañana, tarde<br>y <span class="grad-gold">noche</span>.</h1>
+      <p class="lead rv d2" style="margin-top:14px">Dos turnos por la mañana y clases por grupo en la tarde y noche.</p>
 
       <div class="sched">
         <div class="slot glass rv d1">
-          <div class="hora">07:00–11:00</div>
-          <div class="quien">Reacondicionamiento · personas adultas · lunes a viernes</div>
+          <div class="hora">07:00–08:00</div>
+          <div class="quien">Primer turno de mañana · lunes a viernes</div>
           <ul>
-            <li>Movilidad y biomecánica del movimiento</li>
-            <li>Fuerza y cardio adaptados</li>
-            <li>Grupos por nivel de movilidad, no por edad</li>
-            <li>Volver a moverse con confianza</li>
+            <li>Reacondicionamiento</li>
+            <li>Baloncesto</li>
+            <li>Consulta el programa y los cupos disponibles</li>
           </ul>
         </div>
         <div class="slot glass rv d2">
-          <div class="hora">14:00–17:00</div>
+          <div class="hora">08:00–09:00</div>
+          <div class="quien">Segundo turno de mañana · lunes a viernes</div>
+          <ul>
+            <li>Reacondicionamiento</li>
+            <li>Baloncesto</li>
+            <li>Consulta el programa y los cupos disponibles</li>
+          </ul>
+        </div>
+        <div class="slot glass rv d3">
+          <div class="hora">14:00 y 15:00</div>
           <div class="quien">Desarrollo · grupos formativos · lunes a viernes</div>
           <ul>
             <li>14:00 · Micro</li>
             <li>15:00 · Desarrollo</li>
-            <li>16:00 · Élite</li>
-          </ul>
-        </div>
-        <div class="slot glass rv d3">
-          <div class="hora">17:00–19:30</div>
-          <div class="quien">Especializado y Alto Rendimiento</div>
-          <ul>
-            <li>Grupos de trabajo de máximo 20</li>
-            <li>Grupos casi individuales de máximo 10</li>
-            <li>Trabajo diseñado con datos antropométricos</li>
-            <li>Cupo limitado por horas de cancha</li>
           </ul>
         </div>
         <div class="slot glass rv d4">
+          <div class="hora">17:00–18:00</div>
+          <div class="quien">Élite · lunes a viernes</div>
+          <ul>
+            <li>Baloncesto del grupo Élite</li>
+            <li>Grupos por nivel real</li>
+          </ul>
+        </div>
+        <div class="slot glass rv d1">
+          <div class="hora">18:00–19:00</div>
+          <div class="quien">Reacondicionamiento · personas adultas · lunes a viernes</div>
+          <ul>
+            <li>Movilidad, fuerza y cardio adaptados</li>
+            <li>Valoración inicial y grupos por nivel de movilidad</li>
+          </ul>
+        </div>
+        <div class="slot glass rv d2">
           <span class="chip gold" style="margin-bottom:14px;display:inline-flex">Nuevo</span>
-          <div class="hora">19:30–21:00</div>
+          <div class="hora">19:00–20:00</div>
           <div class="quien">Clase Ejecutiva · personas adultas · horario nocturno</div>
           <p style="color:var(--fg-secondary);margin:10px 0 16px;line-height:1.6">Para quienes salen del trabajo y quieren entrenar en serio.</p>
           <p style="margin:0 0 8px;line-height:1.6"><b style="color:var(--gold-500);font-size:1.2em">$25/mes</b> · Tarifa regular · Cupos limitados.</p>
-          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Consulta la matrícula y los cupos disponibles para inscribirte.</p>
+          <p style="color:var(--fg-secondary);margin:0 0 16px;line-height:1.6">Matrícula única: $45. Consulta los cupos disponibles para inscribirte.</p>
           <a class="btn btn-wa btn-block" data-wa="Me interesa la Clase Ejecutiva nocturna y quiero consultar los cupos y condiciones de inscripción. #ClaseEjecutiva">Consultar la Clase Ejecutiva</a>
         </div>
       </div>
 
+      <p class="lead rv" style="margin-top:24px">Para Especializado y Alto Rendimiento, consulta el horario de las sesiones adicionales y los cupos.</p>
       <div class="sec-tight rv" style="text-align:center;padding-bottom:0">
         <a class="btn btn-wa" data-wa="Quiero confirmar horarios y disponibilidad. #Horarios">Confirmar horarios y disponibilidad</a>
       </div>
@@ -995,6 +1034,15 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
       <div class="eyebrow gold rv">06 · Quiénes somos</div>
       <h1 class="rv d1">Un equipo de entrenadores,<br>un <span class="grad-gold">sistema</span>.<span class="hero-subtag" style="display:block;font-size:.36em;letter-spacing:.03em;color:var(--fg-secondary);margin-top:10px">Muchas familias, un solo grupo.</span></h1>
       <p class="lead rv d2" style="margin-top:14px">La mayoría de las escuelas son un buen entrenador y una libreta. Nosotros somos un equipo: más de cuatro décadas de experiencia formativa en la cancha, gestión con datos y una app que muestra a la familia cómo va su hijo.</p>
+
+      <section class="court-media" id="media-nosotros" aria-labelledby="media-nosotros-title">
+        <div class="eyebrow gold">La vida del club</div>
+        <h2 id="media-nosotros-title">Un grupo en la cancha</h2>
+        <figure class="court-group glass">
+          <picture><source type="image/webp" srcset="assets/cancha/IMG_0762-640.webp 640w, assets/cancha/IMG_0762-1200.webp 1200w, assets/cancha/IMG_0762-1920.webp 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px"><img src="assets/cancha/IMG_0762-1200.jpg" srcset="assets/cancha/IMG_0762-640.jpg 640w, assets/cancha/IMG_0762-1200.jpg 1200w, assets/cancha/IMG_0762-1920.jpg 1920w" sizes="(max-width:1200px) calc(100vw - 40px), 1100px" width="1920" height="1080" alt="Grupo de baloncesto en la cancha techada, con dos tableros y aros al fondo" loading="lazy" decoding="async"></picture>
+          <figcaption>Un grupo que aprende y crece en la cancha.</figcaption>
+        </figure>
+      </section>
 
       <div class="grid2 team-grid">
         <div class="team-card glass rv d1">
@@ -1081,7 +1129,7 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           </div>
           <div class="venue-body">
             <h3>La cancha privada</h3>
-            <p>El espacio cerrado de la fase inicial: techada, privada y con zona de espera para las familias. Aquí vive el plan formativo y el reacondicionamiento de las mañanas, de lunes a viernes.</p>
+            <p>El espacio cerrado de la fase inicial: techada, privada y con zona de espera para las familias. Aquí entrenan los grupos de baloncesto y Reacondicionamiento, de lunes a viernes. Consulta los turnos de mañana, tarde y noche.</p>
           </div>
         </div>
         <div class="venue glass rv d2">
@@ -1094,6 +1142,13 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
           </div>
         </div>
       </div>
+
+
+      <section class="court-media" id="galeria-cancha" aria-labelledby="galeria-cancha-title">
+        <div class="eyebrow gold">La cancha techada</div>
+        <h2 id="galeria-cancha-title">La cancha y sus aros</h2>
+        <div class="court-single"><figure class="court-photo glass"><picture><source type="image/webp" srcset="assets/cancha/IMG_0824-cancha-480.webp 480w, assets/cancha/IMG_0824-cancha-720.webp 720w, assets/cancha/IMG_0824-cancha-1080.webp 1080w" sizes="(max-width:580px) calc(100vw - 40px), 540px"><img src="assets/cancha/IMG_0824-cancha-720.jpg" srcset="assets/cancha/IMG_0824-cancha-480.jpg 480w, assets/cancha/IMG_0824-cancha-720.jpg 720w, assets/cancha/IMG_0824-cancha-1080.jpg 1080w" sizes="(max-width:580px) calc(100vw - 40px), 540px" width="1080" height="1920" alt="Vista de la cancha techada con varios aros de baloncesto y un grupo durante el entrenamiento" loading="lazy" decoding="async"></picture><figcaption>La cancha y sus aros.</figcaption></figure></div>
+      </section>
 
       <div class="plata-photo glass rv d3">
         <picture><source srcset="assets/reacondicionamiento.webp" type="image/webp"><img src="assets/reacondicionamiento.jpg" alt="Reacondicionamiento, el grupo de la mañana" loading="lazy" decoding="async"></picture>
@@ -1162,7 +1217,11 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
 
   var barObserver=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
-      if(e.isIntersecting){ animateBar(e.target); barObserver.unobserve(e.target); }
+      if(e.isIntersecting){
+        var fill=e.target.querySelector('.fill[data-w]');
+        if(fill) animateBar(fill);
+        barObserver.unobserve(e.target);
+      }
     });
   },{threshold:.3});
 
@@ -1198,7 +1257,8 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     bars.forEach(function(f){ f.style.transform='scaleX(0)'; });
     requestAnimationFrame(function(){
       revs.forEach(function(el){ revealObserver.observe(el); });
-      bars.forEach(function(f){ barObserver.observe(f); });
+      // Observe the track: scaleX(0) gives the fill a zero-width intersection target.
+      bars.forEach(function(f){ barObserver.observe(f.parentElement); });
     });
   }
 
@@ -1222,7 +1282,10 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     var prev = activeView ? viewEls[activeView] : null;
     var next = viewEls[name];
     if(!next) return;
-    if(prev){ prev.classList.remove('active','entering'); } else { VIEWS.forEach(function(v){ if(v!==name && viewEls[v]) viewEls[v].classList.remove('active','entering'); }); }
+    if(prev){
+      prev.querySelectorAll('video').forEach(function(video){ video.pause(); });
+      prev.classList.remove('active','entering');
+    } else { VIEWS.forEach(function(v){ if(v!==name && viewEls[v]) viewEls[v].classList.remove('active','entering'); }); }
     next.classList.add('active');
     next.classList.remove('entering');
     void next.offsetWidth;
@@ -1232,11 +1295,20 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     activateReveals(next);
     if(name==='inicio') playHero();
     activeView=name;
+    onScroll();
   }
 
   addEventListener('hashchange', function(){ showView(normalizeHash()); });
 
   var navEl=document.getElementById('nav'), fab=document.getElementById('fab');
+  var heroEl=document.querySelector('#view-inicio .hero');
+  var progressEl=document.getElementById('scroll-progress');
+  var scrollCue=document.getElementById('scrollcue');
+  if(scrollCue){
+    scrollCue.addEventListener('click', function(){
+      document.getElementById('la-promesa').scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
+    });
+  }
   var ticking=false;
   function onScroll(){
     var y=window.scrollY||document.documentElement.scrollTop;
@@ -1244,6 +1316,17 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
     fab.classList.toggle('show', y>280);
     var z=document.querySelector('.view.active .zarpazo-bg');
     if(z && !reduced) z.style.transform='translateY('+Math.min(y*0.06,42)+'px)';
+    var onHome=activeView==='inicio';
+    progressEl.classList.toggle('is-visible',onHome);
+    if(onHome){
+      var travel=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+      progressEl.style.transform='scaleX('+Math.min(1,y/travel)+')';
+      if(!reduced){
+        var heroProgress=Math.min(1,y/Math.max(1,heroEl.offsetHeight));
+        heroEl.style.setProperty('--hero-offset',(heroProgress*28)+'px');
+        heroEl.style.setProperty('--hero-scale',1+heroProgress*.06);
+      }
+    }
     ticking=false;
   }
   addEventListener('scroll', function(){ if(!ticking){ requestAnimationFrame(onScroll); ticking=true; } }, {passive:true});
@@ -1262,7 +1345,6 @@ footer{border-top:1px solid rgb(255 255 255/.08);padding:28px 0;background:var(-
   }
 
   wireWA();
-  onScroll();
   showView(normalizeHash(), true);
 })();
 </script>
